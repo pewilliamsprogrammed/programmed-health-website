@@ -40,11 +40,11 @@ export default function Landing() {
                 </Link>
               </Button>
               <Link
-                href="/about"
+                href="/learn-more"
                 className="font-medium text-[rgb(132,189,0)] hover:underline"
                 prefetch={false}
               >
-                About
+                Learn more
               </Link>
             </div>
           </div>
