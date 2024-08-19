@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="border-t border-[rgba(255,255,255,0.1)] px-4 py-6 md:px-6">
+    <footer className="flex justify-center border-t border-[rgba(255,255,255,0.1)] px-4 py-6 md:px-6">
       <div className="container flex flex-col space-y-2 xl:flex-row xl:items-center xl:justify-between xl:space-y-0">
         <p className="text-sm text-[rgba(255,255,255,0.6)]">
           &copy; 2024 Programmed Health Professionals. All rights reserved.

@@ -5,9 +5,9 @@ import Footer from "./footer";
 
 export default function Landing() {
   return (
-    <div className="flex min-h-[100dvh] flex-col bg-[rgb(12,35,64)] text-white">
+    <div className="flex min-h-[100dvh] w-full flex-col justify-center bg-[rgb(12,35,64)] text-white">
       <Header />
-      <main className="container flex flex-1 flex-col items-center justify-center px-4 py-12 text-center md:px-6 md:py-24 lg:py-32">
+      <main className="flex w-full flex-1 flex-col items-center justify-center px-4 py-12 md:px-6 md:py-24 lg:py-32">
         <div className="flex items-center justify-between space-x-6">
           <div className="max-w-3xl space-y-6 text-left">
             <h1 className="text-4xl font-bold tracking-tight md:text-5xl">
@@ -60,7 +60,7 @@ export default function Landing() {
           </div>
         </div>
       </main>
-      <section className="w-full bg-[rgba(255,255,255,0.05)] py-12 md:py-24 lg:py-32">
+      <section className="flex w-full justify-center bg-[rgba(255,255,255,0.05)] py-12 md:py-24 lg:py-32">
         <div className="container space-y-12 px-4 md:px-6">
           <div className="space-y-4 text-center">
             <h2 className="text-3xl font-bold md:text-4xl">
@@ -103,7 +103,7 @@ export default function Landing() {
           </div>
         </div>
       </section>
-      <section className="w-full py-12 md:py-24 lg:py-32">
+      <section className="flex w-full justify-center py-12 md:py-24 lg:py-32">
         <div className="container space-y-12 px-4 md:px-6">
           <div className="space-y-4 text-center">
             <h2 className="text-3xl font-bold md:text-4xl">
@@ -143,7 +143,7 @@ export default function Landing() {
           </div>
         </div>
       </section>
-      <section className="w-full bg-[rgba(255,255,255,0.05)] py-12 md:py-24 lg:py-32">
+      <section className="flex w-full justify-center bg-[rgba(255,255,255,0.05)] py-12 md:py-24 lg:py-32">
         <div className="container space-y-12 px-4 md:px-6">
           <div className="space-y-4 text-center">
             <h2 className="text-3xl font-bold md:text-4xl">
@@ -182,7 +182,7 @@ export default function Landing() {
           </div>
         </div>
       </section>
-      <section className="w-full py-12 md:py-24 lg:py-32">
+      <section className="flex w-full justify-center py-12 md:py-24 lg:py-32">
         <div className="container space-y-12 px-4 md:px-6">
           <div className="space-y-4 text-center">
             <h2 className="text-3xl font-bold md:text-4xl">
@@ -224,7 +224,7 @@ export default function Landing() {
           </div>
         </div>
       </section>
-      <section className="w-full bg-[rgba(255,255,255,0.05)] py-12 md:py-24 lg:py-32">
+      <section className="flex w-full justify-center bg-[rgba(255,255,255,0.05)] py-12 md:py-24 lg:py-32">
         <div className="container space-y-12 px-4 md:px-6">
           <div className="space-y-4 text-center">
             <h2 className="text-3xl font-bold md:text-4xl">

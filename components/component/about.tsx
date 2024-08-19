@@ -3,75 +3,11 @@ import Link from "next/link";
 import Footer from "./footer";
 import Header from "./header";
 
-// export default function About() {
-//   return (
-//     <div className="bg-[rgb(12,35,64)] text-white min-h-[100dvh] flex flex-col">
-//       <Header />
-
-//       <main className="flex-1 container px-4 md:px-6 py-12 md:py-24 lg:py-32 flex flex-col items-center justify-center text-center">
-//         <div className="max-w-3xl space-y-6 text-left">
-//           <div className="space-y-8">
-//             <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
-//               About Programmed Health Professionals
-//             </h1>
-//             <p className="text-lg md:text-xl text-[rgba(255,255,255,0.8)] text-left">
-//               We are one of Australia's busiest nursing agencies, providing
-//               registered nurses, enrolled nurses, and personal services workers
-//               to healthcare facilities across the country. Our mission is to
-//               connect talented healthcare professionals with rewarding job
-//               opportunities and support them in delivering exceptional patient
-//               care.
-//             </p>
-//             <p className="text-lg md:text-xl text-[rgba(255,255,255,0.8)] text-left">
-//               With over a decade of experience in the industry, we have built a
-//               reputation for excellence and reliability. Our team of dedicated
-//               recruiters work closely with our clients to understand their
-//               unique staffing needs and match them with the right candidates.
-//             </p>
-//             <p className="text-lg md:text-xl text-[rgba(255,255,255,0.8)] text-left">
-//               Nursing Agency has been in business for over 40 years, dedicated
-//               to providing the highest quality nursing services and exceptional
-//               customer service. Our commitment to excellence has made us a
-//               trusted partner for healthcare facilities across the country.
-//             </p>
-//             <p className="text-lg md:text-xl text-[rgba(255,255,255,0.8)] text-left">
-//               We take pride in our dedication to quality and customer
-//               satisfaction. Our team works tirelessly to ensure that every
-//               placement is a success, and we are committed to supporting our
-//               nurses and clients every step of the way.
-//             </p>
-//             <div className="flex flex-col sm:flex-row items-center gap-4">
-//               <Button className="bg-[rgb(132,189,0)] text-[rgb(12,35,64)] font-medium px-8 py-3 rounded-md hover:bg-[rgb(106,152,0)]">
-//                 <Link
-//                   target="_blank"
-//                   href="https://php.fasttrack360.com.au/FastTrack.Web.Questionnaire/(S(fuzpugirjne1siuiax1e5yi4))/Questionnaire.page?Type=SbJobOrder&Reference=200000488&Source=Seek"
-//                   prefetch={false}
-//                 >
-//                   Join Our Team
-//                 </Link>
-//               </Button>
-
-//               <Link
-//                 href="#"
-//                 className="text-[rgb(132,189,0)] font-medium hover:underline"
-//                 prefetch={false}
-//               >
-//                 Learn More
-//               </Link>
-//             </div>
-//           </div>
-//         </div>
-//       </main>
-//       <Footer />
-//     </div>
-//   );
-// }
-
 export default function About() {
   return (
-    <div className="flex min-h-[100dvh] flex-col bg-[rgb(12,35,64)] text-white">
+    <div className="flex min-h-[100dvh] w-full flex-col justify-center bg-[rgb(12,35,64)] text-white">
       <Header />
-      <main className="container flex flex-1 flex-col items-center justify-center px-4 py-12 text-center md:px-6 md:py-24 lg:py-32">
+      <main className="flex w-full flex-1 flex-col items-center justify-center px-4 py-12 md:px-6 md:py-24 lg:py-32">
         <div className="flex items-center justify-between space-x-6">
           <div className="max-w-3xl space-y-6 text-left">
             <h1 className="text-4xl font-bold tracking-tight md:text-5xl">
@@ -125,7 +61,7 @@ export default function About() {
           </div>
         </div>
       </main>
-      <section className="w-full bg-[rgba(255,255,255,0.05)] py-12 md:py-24 lg:py-32">
+      <section className="flex w-full justify-center bg-[rgba(255,255,255,0.05)] py-12 md:py-24 lg:py-32">
         <div className="container space-y-12 px-4 md:px-6">
           <div className="space-y-4 text-center">
             <h2 className="text-3xl font-bold md:text-4xl">
@@ -166,7 +102,7 @@ export default function About() {
           </div>
         </div>
       </section>
-      <section className="w-full py-12 md:py-24 lg:py-32">
+      <section className="flex w-full justify-center py-12 md:py-24 lg:py-32">
         <div className="container space-y-12 px-4 md:px-6">
           <div className="space-y-4 text-center">
             <h2 className="text-3xl font-bold md:text-4xl">
