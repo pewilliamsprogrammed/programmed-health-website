@@ -6,6 +6,8 @@ import Footer from "@/components/component/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
+import { Analytics } from "@vercel/analytics/react";
+
 const fontHeading = Inter({
   subsets: ["latin"],
   display: "swap",
@@ -31,7 +33,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className}`}>{children}</body>
+      <body className={`${inter.className}`}>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
