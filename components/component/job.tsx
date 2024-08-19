@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import Header from "./header";
 import Footer from "./footer";
+import { track } from "@vercel/analytics";
 
 export default function Jobs() {
   return (
@@ -20,9 +21,7 @@ export default function Jobs() {
               placements available. Join our team and start start working now.
             </p>
             <div className="flex flex-col items-center gap-4 sm:flex-row">
-              <Button className="rounded-md bg-[rgb(132,189,0)] px-8 py-3 font-medium text-[rgb(12,35,64)] hover:bg-[rgb(106,152,0)]">
-                Apply Now
-              </Button>
+              <ApplyNow />
               <Link
                 href="/learn-more"
                 className="font-medium text-[rgb(132,189,0)] hover:underline"
@@ -65,9 +64,7 @@ export default function Jobs() {
                 private hospitals throughout Sydney. Apply now for immediate
                 start.
               </p>
-              <Button className="rounded-md bg-[rgb(132,189,0)] px-6 py-2 font-medium text-[rgb(12,35,64)] hover:bg-[rgb(106,152,0)]">
-                Apply Now
-              </Button>
+              <ApplyNow />
             </div>
             <div className="space-y-4 rounded-lg bg-[rgba(255,255,255,0.1)] p-6">
               <div className="flex items-center space-x-2">
@@ -80,9 +77,7 @@ export default function Jobs() {
                 across Melbourne and the surrounding suburbs. Apply now for
                 immediate start.
               </p>
-              <Button className="rounded-md bg-[rgb(132,189,0)] px-6 py-2 font-medium text-[rgb(12,35,64)] hover:bg-[rgb(106,152,0)]">
-                Apply Now
-              </Button>
+              <ApplyNow />
             </div>
             <div className="space-y-4 rounded-lg bg-[rgba(255,255,255,0.1)] p-6">
               <div className="flex items-center space-x-2">
@@ -96,9 +91,7 @@ export default function Jobs() {
                 looking for carers to assist with daily living activities. Apply
                 now for immediate start.
               </p>
-              <Button className="rounded-md bg-[rgb(132,189,0)] px-6 py-2 font-medium text-[rgb(12,35,64)] hover:bg-[rgb(106,152,0)]">
-                Apply Now
-              </Button>
+              <ApplyNow />
             </div>
             <div className="space-y-4 rounded-lg bg-[rgba(255,255,255,0.1)] p-6">
               <div className="flex items-center space-x-2">
@@ -113,9 +106,7 @@ export default function Jobs() {
                 have a range of positions available for immediate start. Apply
                 now to secure your spot. .
               </p>
-              <Button className="rounded-md bg-[rgb(132,189,0)] px-6 py-2 font-medium text-[rgb(12,35,64)] hover:bg-[rgb(106,152,0)]">
-                Apply Now
-              </Button>
+              <ApplyNow />
             </div>
           </div>
 
@@ -130,9 +121,7 @@ export default function Jobs() {
                 demand. Pick your own days and hours, best rates in the
                 industry. Apply now for immediate start.
               </p>
-              <Button className="rounded-md bg-[rgb(132,189,0)] px-6 py-2 font-medium text-[rgb(12,35,64)] hover:bg-[rgb(106,152,0)]">
-                Apply Now
-              </Button>
+              <ApplyNow />
             </div>
             <div className="space-y-4 rounded-lg bg-[rgba(255,255,255,0.1)] p-6">
               <div className="flex items-center space-x-2">
@@ -147,9 +136,7 @@ export default function Jobs() {
                 Melbourne, Adelaide, and Brisbane. Apply now for immediate
                 start.
               </p>
-              <Button className="rounded-md bg-[rgb(132,189,0)] px-6 py-2 font-medium text-[rgb(12,35,64)] hover:bg-[rgb(106,152,0)]">
-                Apply Now
-              </Button>
+              <ApplyNow />
             </div>
             <div className="space-y-4 rounded-lg bg-[rgba(255,255,255,0.1)] p-6">
               <div className="flex items-center space-x-2">
@@ -166,9 +153,7 @@ export default function Jobs() {
                 Provide vaccinations and ongoing community health support in
                 Australia most remote areas. Apply now for immediate start.
               </p>
-              <Button className="rounded-md bg-[rgb(132,189,0)] px-6 py-2 font-medium text-[rgb(12,35,64)] hover:bg-[rgb(106,152,0)]">
-                Apply Now
-              </Button>
+              <ApplyNow />
             </div>
             <div className="space-y-4 rounded-lg bg-[rgba(255,255,255,0.1)] p-6">
               <div className="flex items-center space-x-2">
@@ -186,9 +171,7 @@ export default function Jobs() {
                 regional Australia as a community care nurse. This is a
                 challenging but rewarding role. Apply now for immediate start.
               </p>
-              <Button className="rounded-md bg-[rgb(132,189,0)] px-6 py-2 font-medium text-[rgb(12,35,64)] hover:bg-[rgb(106,152,0)]">
-                Apply Now
-              </Button>
+              <ApplyNow />
             </div>
           </div>
         </div>
@@ -443,5 +426,24 @@ function WalletIcon(props: { className: string }) {
       <path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a1 1 0 0 0 1-1v-2a1 1 0 0 0-1-1" />
       <path d="M3 5v14a2 2 0 0 0 2 2h15a1 1 0 0 0 1-1v-4" />
     </svg>
+  );
+}
+
+function ApplyNow() {
+  return (
+    <Button
+      className="rounded-md bg-[rgb(132,189,0)] px-8 py-3 font-medium text-[rgb(12,35,64)] hover:bg-[rgb(106,152,0)]"
+      onClick={() => {
+        track("Applynow");
+      }}
+    >
+      <Link
+        target="_blank"
+        href="https://php.fasttrack360.com.au/FastTrack.Web.Questionnaire/(S(fuzpugirjne1siuiax1e5yi4))/Questionnaire.page?Type=SbJobOrder&Reference=200000488&Source=Seek"
+        prefetch={false}
+      >
+        Apply Now
+      </Link>
+    </Button>
   );
 }

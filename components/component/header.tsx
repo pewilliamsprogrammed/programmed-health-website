@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { useState } from "react";
 import MobileMenu from "./mobile-menu";
+import { track } from "@vercel/analytics";
 
 export default function Header() {
   const [showContacts, setShowContacts] = useState(false);
@@ -54,8 +55,10 @@ export default function Header() {
           </Link>
         </nav>
         <Button
-          // variant="solid"
           className="rounded-md bg-[rgb(132,189,0)] px-6 py-2 font-medium text-[rgb(12,35,64)] hover:bg-[rgb(106,152,0)]"
+          onClick={() => {
+            track("Applynow");
+          }}
         >
           <Link
             target="_blank"

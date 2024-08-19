@@ -2,6 +2,7 @@ import { Button } from "../ui/button";
 import Link from "next/link";
 import Footer from "./footer";
 import Header from "./header";
+import { track } from "@vercel/analytics";
 
 export default function About() {
   return (
@@ -29,8 +30,10 @@ export default function About() {
             </p>
             <div className="flex flex-col items-center gap-4 sm:flex-row">
               <Button
-                //variant="solid"
                 className="rounded-md bg-[rgb(132,189,0)] px-8 py-3 font-medium text-[rgb(12,35,64)] hover:bg-[rgb(106,152,0)]"
+                onClick={() => {
+                  track("Applynow");
+                }}
               >
                 <Link
                   target="_blank"

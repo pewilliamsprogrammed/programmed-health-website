@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import Header from "./header";
 import Footer from "./footer";
+import { track } from "@vercel/analytics";
 
 export default function Landing() {
   return (
@@ -28,7 +29,9 @@ export default function Landing() {
             </p>
             <div className="flex flex-col items-center gap-4 sm:flex-row">
               <Button
-                //variant="solid"
+                onClick={() => {
+                  track("Applynow");
+                }}
                 className="rounded-md bg-[rgb(132,189,0)] px-8 py-3 font-medium text-[rgb(12,35,64)] hover:bg-[rgb(106,152,0)]"
               >
                 <Link
