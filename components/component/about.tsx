@@ -69,15 +69,15 @@ import Header from "./header";
 
 export default function About() {
   return (
-    <div className="bg-[rgb(12,35,64)] text-white min-h-[100dvh] flex flex-col">
+    <div className="flex min-h-[100dvh] flex-col bg-[rgb(12,35,64)] text-white">
       <Header />
-      <main className="flex-1 container px-4 md:px-6 py-12 md:py-24 lg:py-32 flex flex-col items-center justify-center text-center">
-        <div className="space-x-6 flex items-center justify-between">
+      <main className="container flex flex-1 flex-col items-center justify-center px-4 py-12 text-center md:px-6 md:py-24 lg:py-32">
+        <div className="flex items-center justify-between space-x-6">
           <div className="max-w-3xl space-y-6 text-left">
-            <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
+            <h1 className="text-4xl font-bold tracking-tight md:text-5xl">
               About Programmed Health Professionals
             </h1>
-            <p className="text-lg md:text-xl text-[rgba(255,255,255,0.8)]">
+            <p className="text-lg text-[rgba(255,255,255,0.8)] md:text-xl">
               We are one of Australia's busiest nursing agencies, providing
               registered nurses, enrolled nurses, and personal services workers
               to healthcare facilities across the country. Our mission is to
@@ -86,15 +86,15 @@ export default function About() {
               care.
             </p>
 
-            <p className="text-lg md:text-xl text-[rgba(255,255,255,0.8)]">
+            <p className="text-lg text-[rgba(255,255,255,0.8)] md:text-xl">
               If you a <strong>certified</strong> registered nurse, enrolled
               nurse, or personal services worker looking for work now. Tap below
               to apply. Our team will be in touch right away.
             </p>
-            <div className="flex flex-col sm:flex-row items-center gap-4">
+            <div className="flex flex-col items-center gap-4 sm:flex-row">
               <Button
                 //variant="solid"
-                className="bg-[rgb(132,189,0)] text-[rgb(12,35,64)] font-medium px-8 py-3 rounded-md hover:bg-[rgb(106,152,0)]"
+                className="rounded-md bg-[rgb(132,189,0)] px-8 py-3 font-medium text-[rgb(12,35,64)] hover:bg-[rgb(106,152,0)]"
               >
                 <Link
                   target="_blank"
@@ -106,7 +106,7 @@ export default function About() {
               </Button>
               <Link
                 href="/about"
-                className="text-[rgb(132,189,0)] font-medium hover:underline"
+                className="font-medium text-[rgb(132,189,0)] hover:underline"
                 prefetch={false}
               >
                 Learn More
@@ -119,27 +119,27 @@ export default function About() {
               alt="Nurse"
               width={300}
               height={300}
-              className="hidden md:block rounded-lg"
+              className="hidden rounded-lg md:block"
               style={{ aspectRatio: "700/900", objectFit: "cover" }}
             />
           </div>
         </div>
       </main>
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-[rgba(255,255,255,0.05)]">
-        <div className="container px-4 md:px-6 space-y-12">
-          <div className="text-center space-y-4">
-            <h2 className="text-3xl md:text-4xl font-bold">
+      <section className="w-full bg-[rgba(255,255,255,0.05)] py-12 md:py-24 lg:py-32">
+        <div className="container space-y-12 px-4 md:px-6">
+          <div className="space-y-4 text-center">
+            <h2 className="text-3xl font-bold md:text-4xl">
               40 years of excellence in healthcare recruitment
             </h2>
-            <p className="max-w-3xl mx-auto text-[rgba(255,255,255,0.8)]">
+            <p className="mx-auto max-w-3xl text-[rgba(255,255,255,0.8)]">
               With over a 40 years of experience in the industry, we have built
               a reputation for excellence and reliability. Our team of dedicated
               recruiters work closely with our clients to understand their
               unique staffing needs and match them with the right candidates.
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-[rgba(255,255,255,0.1)] rounded-lg p-6 space-y-4">
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="space-y-4 rounded-lg bg-[rgba(255,255,255,0.1)] p-6">
               <CalendarIcon className="h-8 w-8 text-[rgb(132,189,0)]" />
               <h3 className="text-xl font-semibold">Flexible Scheduling</h3>
               <p className="text-[rgba(255,255,255,0.8)]">
@@ -147,7 +147,7 @@ export default function About() {
                 and preferences.
               </p>
             </div>
-            <div className="bg-[rgba(255,255,255,0.1)] rounded-lg p-6 space-y-4">
+            <div className="space-y-4 rounded-lg bg-[rgba(255,255,255,0.1)] p-6">
               <BriefcaseIcon className="h-8 w-8 text-[rgb(132,189,0)]" />
               <h3 className="text-xl font-semibold">Career Development</h3>
               <p className="text-[rgba(255,255,255,0.8)]">
@@ -155,7 +155,7 @@ export default function About() {
                 skills and advance your career.
               </p>
             </div>
-            <div className="bg-[rgba(255,255,255,0.1)] rounded-lg p-6 space-y-4">
+            <div className="space-y-4 rounded-lg bg-[rgba(255,255,255,0.1)] p-6">
               <ClipboardIcon className="h-8 w-8 text-[rgb(132,189,0)]" />
               <h3 className="text-xl font-semibold">Personalized Support</h3>
               <p className="text-[rgba(255,255,255,0.8)]">
@@ -166,21 +166,21 @@ export default function About() {
           </div>
         </div>
       </section>
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-[rgba(255,255,255,0.05)]">
-        <div className="container px-4 md:px-6 space-y-12">
-          <div className="text-center space-y-4">
-            <h2 className="text-3xl md:text-4xl font-bold">
+      <section className="w-full py-12 md:py-24 lg:py-32">
+        <div className="container space-y-12 px-4 md:px-6">
+          <div className="space-y-4 text-center">
+            <h2 className="text-3xl font-bold md:text-4xl">
               Committed to quality and customer satisfaction
             </h2>
-            <p className="max-w-3xl mx-auto text-[rgba(255,255,255,0.8)]">
+            <p className="mx-auto max-w-3xl text-[rgba(255,255,255,0.8)]">
               We take pride in our dedication to quality and customer
               satisfaction. Our team works tirelessly to ensure that every
               placement is a success, and we are committed to supporting our
               nurses and clients every step of the way.
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-[rgba(255,255,255,0.1)] rounded-lg p-6 space-y-4">
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="space-y-4 rounded-lg bg-[rgba(255,255,255,0.1)] p-6">
               <BookIcon className="h-8 w-8 text-[rgb(132,189,0)]" />
               <h3 className="text-xl font-semibold">Continuing Education</h3>
               <p className="text-[rgba(255,255,255,0.8)]">
@@ -189,7 +189,7 @@ export default function About() {
                 up-to-date with the latest industry trends and best practices.
               </p>
             </div>
-            <div className="bg-[rgba(255,255,255,0.1)] rounded-lg p-6 space-y-4">
+            <div className="space-y-4 rounded-lg bg-[rgba(255,255,255,0.1)] p-6">
               <GraduationCapIcon className="h-8 w-8 text-[rgb(132,189,0)]" />
               <h3 className="text-xl font-semibold">
                 Professional Development
@@ -200,7 +200,7 @@ export default function About() {
                 their goals.
               </p>
             </div>
-            <div className="bg-[rgba(255,255,255,0.1)] rounded-lg p-6 space-y-4">
+            <div className="space-y-4 rounded-lg bg-[rgba(255,255,255,0.1)] p-6">
               <ClipboardListIcon className="h-8 w-8 text-[rgb(132,189,0)]" />
               <h3 className="text-xl font-semibold">Specialized Training</h3>
               <p className="text-[rgba(255,255,255,0.8)]">

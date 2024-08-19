@@ -5,27 +5,27 @@ import Footer from "./footer";
 
 export default function Jobs() {
   return (
-    <div className="bg-[rgb(12,35,64)] text-white min-h-[100dvh] flex flex-col">
+    <div className="flex min-h-[100dvh] flex-col bg-[rgb(12,35,64)] text-white">
       <Header />
-      <main className="flex-1 container px-4 md:px-6 py-12 md:py-24 lg:py-32 flex flex-col items-center justify-center text-center">
-        <div className="space-x-6 flex items-center justify-between">
+      <main className="container flex flex-1 flex-col items-center justify-center px-4 py-12 text-center md:px-6 md:py-24 lg:py-32">
+        <div className="flex items-center justify-between space-x-6">
           <div className="max-w-2xl space-y-6 text-left">
-            <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
+            <h1 className="text-4xl font-bold tracking-tight md:text-5xl">
               Positions available
             </h1>
-            <p className="text-lg md:text-xl text-[rgba(255,255,255,0.8)]">
+            <p className="text-lg text-[rgba(255,255,255,0.8)] md:text-xl">
               We have jobs available for registered nurses, enrolled nurses, and
               personal services workers across the country. Work in Perth,
               Sydney, Melbourne, Adelaide, or Brisbane as well as many regional
               placements available. Join our team and start start working now.
             </p>
-            <div className="flex flex-col sm:flex-row items-center gap-4">
-              <Button className="bg-[rgb(132,189,0)] text-[rgb(12,35,64)] font-medium px-8 py-3 rounded-md hover:bg-[rgb(106,152,0)]">
+            <div className="flex flex-col items-center gap-4 sm:flex-row">
+              <Button className="rounded-md bg-[rgb(132,189,0)] px-8 py-3 font-medium text-[rgb(12,35,64)] hover:bg-[rgb(106,152,0)]">
                 Apply Now
               </Button>
               <Link
                 href="/about"
-                className="text-[rgb(132,189,0)] font-medium hover:underline"
+                className="font-medium text-[rgb(132,189,0)] hover:underline"
                 prefetch={false}
               >
                 Learn More
@@ -38,7 +38,7 @@ export default function Jobs() {
               alt="Nurse"
               width={300}
               height={300}
-              className="hidden md:block rounded-lg"
+              className="hidden rounded-lg md:block"
               style={{ aspectRatio: "700/900", objectFit: "cover" }}
             />
           </div>
@@ -54,30 +54,101 @@ export default function Jobs() {
           </div> */}
         </div>
       </main>
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-[rgba(255,255,255,0.05)]">
-        <div className="container px-4 md:px-6 space-y-12">
-          <div className="text-center space-y-4">
-            <h2 className="text-3xl md:text-4xl font-bold">Jobs Available</h2>
-            <p className="max-w-3xl mx-auto text-[rgba(255,255,255,0.8)]">
+      <section className="w-full bg-[rgba(255,255,255,0.05)] py-12 md:py-24 lg:py-32">
+        <div className="container space-y-12 px-4 md:px-6">
+          <div className="space-y-4 text-center">
+            <h2 className="text-3xl font-bold md:text-4xl">Jobs Available</h2>
+            <p className="mx-auto max-w-3xl text-[rgba(255,255,255,0.8)]">
               We have a variety of job opportunities available across Australia.
               Apply now for immediate start.
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
-            <div className="bg-[rgba(255,255,255,0.1)] rounded-lg p-6 space-y-4">
-              <HospitalIcon className="h-8 w-8 text-[rgb(132,189,0)]" />
-              <h3 className="text-xl font-semibold">Enrolled Nurses Wanted</h3>
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-2">
+            <div className="space-y-4 rounded-lg bg-[rgba(255,255,255,0.1)] p-6">
+              <div className="flex items-center space-x-2">
+                <HospitalIcon className="h-8 w-8 text-[rgb(132,189,0)]" />
+                <h3 className="text-xl font-semibold">Sydney</h3>
+              </div>
+              <h3 className="text-xl font-semibold">Enrolled Nurses</h3>
               <p className="text-[rgba(255,255,255,0.8)]">
-                Enrolled nurses wanted for casual work in Perth, Sydney,
-                Melbourne, Adelaide, and Brisbane. Apply now for immediate
+                Enrolled nurses wanted for casual work at major public and
+                private hospitals throughout Sydney. Apply now for immediate
                 start.
               </p>
-              <Button className="bg-[rgb(132,189,0)] text-[rgb(12,35,64)] font-medium px-6 py-2 rounded-md hover:bg-[rgb(106,152,0)]">
+              <Button className="rounded-md bg-[rgb(132,189,0)] px-6 py-2 font-medium text-[rgb(12,35,64)] hover:bg-[rgb(106,152,0)]">
                 Apply Now
               </Button>
             </div>
-            <div className="bg-[rgba(255,255,255,0.1)] rounded-lg p-6 space-y-4">
-              <HospitalIcon className="h-8 w-8 text-[rgb(132,189,0)]" />
+            <div className="space-y-4 rounded-lg bg-[rgba(255,255,255,0.1)] p-6">
+              <div className="flex items-center space-x-2">
+                <HospitalIcon className="h-8 w-8 text-[rgb(132,189,0)]" />
+                <h3 className="text-xl font-semibold">Melbourne</h3>
+              </div>
+              <h3 className="text-xl font-semibold">Registered Nurses</h3>
+              <p className="text-[rgba(255,255,255,0.8)]">
+                Registered nurses required for a variety of casual positions
+                across Melbourne and the surrounding suburbs. Apply now for
+                immediate start.
+              </p>
+              <Button className="rounded-md bg-[rgb(132,189,0)] px-6 py-2 font-medium text-[rgb(12,35,64)] hover:bg-[rgb(106,152,0)]">
+                Apply Now
+              </Button>
+            </div>
+            <div className="space-y-4 rounded-lg bg-[rgba(255,255,255,0.1)] p-6">
+              <div className="flex items-center space-x-2">
+                <HospitalIcon className="h-8 w-8 text-[rgb(132,189,0)]" />
+                <h3 className="text-xl font-semibold">Adelaide</h3>
+              </div>
+              <h3 className="text-xl font-semibold">Personal Care Workers</h3>
+              <p className="text-[rgba(255,255,255,0.8)]">
+                Multiple positions exist for carers in private homes across
+                Adelaide and the surrounding area. We have numerous clients
+                looking for carers to assist with daily living activities. Apply
+                now for immediate start.
+              </p>
+              <Button className="rounded-md bg-[rgb(132,189,0)] px-6 py-2 font-medium text-[rgb(12,35,64)] hover:bg-[rgb(106,152,0)]">
+                Apply Now
+              </Button>
+            </div>
+            <div className="space-y-4 rounded-lg bg-[rgba(255,255,255,0.1)] p-6">
+              <div className="flex items-center space-x-2">
+                <HospitalIcon className="h-8 w-8 text-[rgb(132,189,0)]" />
+                <h3 className="text-xl font-semibold">Perth</h3>
+              </div>
+              <h3 className="text-xl font-semibold">
+                Personal Services Workers
+              </h3>
+              <p className="text-[rgba(255,255,255,0.8)]">
+                Personal services workers wanted for casual work in Perth. We
+                have a range of positions available for immediate start. Apply
+                now to secure your spot. .
+              </p>
+              <Button className="rounded-md bg-[rgb(132,189,0)] px-6 py-2 font-medium text-[rgb(12,35,64)] hover:bg-[rgb(106,152,0)]">
+                Apply Now
+              </Button>
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-2">
+            <div className="space-y-4 rounded-lg bg-[rgba(255,255,255,0.1)] p-6">
+              <div className="flex items-center space-x-2">
+                <HospitalIcon className="h-8 w-8 text-[rgb(132,189,0)]" />
+                <h3 className="text-xl font-semibold">Perth</h3>
+              </div>
+              <p className="text-[rgba(255,255,255,0.8)]">
+                Registered and enrolled nurses required for very busy public
+                demand. Pick your own days and hours, best rates in the
+                industry. Apply now for immediate start.
+              </p>
+              <Button className="rounded-md bg-[rgb(132,189,0)] px-6 py-2 font-medium text-[rgb(12,35,64)] hover:bg-[rgb(106,152,0)]">
+                Apply Now
+              </Button>
+            </div>
+            <div className="space-y-4 rounded-lg bg-[rgba(255,255,255,0.1)] p-6">
+              <div className="flex items-center space-x-2">
+                <HospitalIcon className="h-8 w-8 text-[rgb(132,189,0)]" />
+                <h3 className="text-xl font-semibold">Brisbane</h3>
+              </div>
               <h3 className="text-xl font-semibold">
                 Registered Nurses Wanted
               </h3>
@@ -86,56 +157,67 @@ export default function Jobs() {
                 Melbourne, Adelaide, and Brisbane. Apply now for immediate
                 start.
               </p>
-              <Button className="bg-[rgb(132,189,0)] text-[rgb(12,35,64)] font-medium px-6 py-2 rounded-md hover:bg-[rgb(106,152,0)]">
+              <Button className="rounded-md bg-[rgb(132,189,0)] px-6 py-2 font-medium text-[rgb(12,35,64)] hover:bg-[rgb(106,152,0)]">
                 Apply Now
               </Button>
             </div>
-            <div className="bg-[rgba(255,255,255,0.1)] rounded-lg p-6 space-y-4">
-              <HospitalIcon className="h-8 w-8 text-[rgb(132,189,0)]" />
+            <div className="space-y-4 rounded-lg bg-[rgba(255,255,255,0.1)] p-6">
+              <div className="flex items-center space-x-2">
+                <HospitalIcon className="h-8 w-8 text-[rgb(132,189,0)]" />
+                <h3 className="text-xl font-semibold">
+                  Northern Territory (remote)
+                </h3>
+              </div>
               <h3 className="text-xl font-semibold">
-                Personal Care Workers Wanted
+                Registered Nurse - Remote
               </h3>
               <p className="text-[rgba(255,255,255,0.8)]">
-                Personal care workers wanted for casual work across Perth,
-                Sydney, Melbourne, Adelaide, and Brisbane. Apply now for
-                immediate start.
+                Registered nurse required to work in remote Northern Territory.
+                Provide vaccinations and ongoing community health support in
+                Australia most remote areas. Apply now for immediate start.
               </p>
-              <Button className="bg-[rgb(132,189,0)] text-[rgb(12,35,64)] font-medium px-6 py-2 rounded-md hover:bg-[rgb(106,152,0)]">
+              <Button className="rounded-md bg-[rgb(132,189,0)] px-6 py-2 font-medium text-[rgb(12,35,64)] hover:bg-[rgb(106,152,0)]">
                 Apply Now
               </Button>
             </div>
-            <div className="bg-[rgba(255,255,255,0.1)] rounded-lg p-6 space-y-4">
-              <HospitalIcon className="h-8 w-8 text-[rgb(132,189,0)]" />
+            <div className="space-y-4 rounded-lg bg-[rgba(255,255,255,0.1)] p-6">
+              <div className="flex items-center space-x-2">
+                <HospitalIcon className="h-8 w-8 text-[rgb(132,189,0)]" />
+                <h3 className="text-xl font-semibold">
+                  Far North Queenslane (remote)
+                </h3>
+              </div>
+
               <h3 className="text-xl font-semibold">
-                Personal Services Workers Wanted
+                Registered Nurse - Remote
               </h3>
               <p className="text-[rgba(255,255,255,0.8)]">
-                Personal services workers wanted for casual work in Perth,
-                Sydney, Melbourne, Adelaide, and Brisbane. Apply now for
-                immediate start.
+                Based in Cairns you will travel to the most Northern parts of
+                regional Australia as a community care nurse. This is a
+                challenging but rewarding role. Apply now for immediate start.
               </p>
-              <Button className="bg-[rgb(132,189,0)] text-[rgb(12,35,64)] font-medium px-6 py-2 rounded-md hover:bg-[rgb(106,152,0)]">
+              <Button className="rounded-md bg-[rgb(132,189,0)] px-6 py-2 font-medium text-[rgb(12,35,64)] hover:bg-[rgb(106,152,0)]">
                 Apply Now
               </Button>
             </div>
           </div>
         </div>
       </section>
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-[rgba(255,255,255,0.05)]">
-        <div className="container px-4 md:px-6 space-y-12">
-          <div className="text-center space-y-4">
-            <h2 className="text-3xl md:text-4xl font-bold">
+      <section className="w-full py-12 md:py-24 lg:py-32">
+        <div className="container space-y-12 px-4 md:px-6">
+          <div className="space-y-4 text-center">
+            <h2 className="text-3xl font-bold md:text-4xl">
               Why Choose Programmed Health Professionals?
             </h2>
-            <p className="max-w-3xl mx-auto text-[rgba(255,255,255,0.8)]">
+            <p className="mx-auto max-w-3xl text-[rgba(255,255,255,0.8)]">
               We are committed to providing the best healthcare staffing
               solutions in Australia. Our team of experts works tirelessly to
               match the right healthcare professionals with the right
               opportunities.
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-[rgba(255,255,255,0.1)] rounded-lg p-6 space-y-4">
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="space-y-4 rounded-lg bg-[rgba(255,255,255,0.1)] p-6">
               <BriefcaseIcon className="h-8 w-8 text-[rgb(132,189,0)]" />
               <h3 className="text-xl font-semibold">
                 Wide Range of Opportunities
@@ -145,7 +227,7 @@ export default function Jobs() {
                 and personal services workers across Australia.
               </p>
             </div>
-            <div className="bg-[rgba(255,255,255,0.1)] rounded-lg p-6 space-y-4">
+            <div className="space-y-4 rounded-lg bg-[rgba(255,255,255,0.1)] p-6">
               <ClipboardIcon className="h-8 w-8 text-[rgb(132,189,0)]" />
               <h3 className="text-xl font-semibold">Streamlined Onboarding</h3>
               <p className="text-[rgba(255,255,255,0.8)]">
@@ -153,7 +235,7 @@ export default function Jobs() {
                 role quickly and seamlessly.
               </p>
             </div>
-            <div className="bg-[rgba(255,255,255,0.1)] rounded-lg p-6 space-y-4">
+            <div className="space-y-4 rounded-lg bg-[rgba(255,255,255,0.1)] p-6">
               <WalletIcon className="h-8 w-8 text-[rgb(132,189,0)]" />
               <h3 className="text-xl font-semibold">Competitive Rates</h3>
               <p className="text-[rgba(255,255,255,0.8)]">
@@ -164,19 +246,19 @@ export default function Jobs() {
           </div>
         </div>
       </section>
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-[rgba(255,255,255,0.05)]">
-        <div className="container px-4 md:px-6 space-y-12">
-          <div className="text-center space-y-4">
-            <h2 className="text-3xl md:text-4xl font-bold">
+      <section className="w-full bg-[rgba(255,255,255,0.05)] py-12 md:py-24 lg:py-32">
+        <div className="container space-y-12 px-4 md:px-6">
+          <div className="space-y-4 text-center">
+            <h2 className="text-3xl font-bold md:text-4xl">
               Financial Benefits
             </h2>
-            <p className="max-w-3xl mx-auto text-[rgba(255,255,255,0.8)]">
+            <p className="mx-auto max-w-3xl text-[rgba(255,255,255,0.8)]">
               At Programmed Health Professionals, we offer a range of financial
               benefits to support our healthcare professionals.
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-[rgba(255,255,255,0.1)] rounded-lg p-6 space-y-4">
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="space-y-4 rounded-lg bg-[rgba(255,255,255,0.1)] p-6">
               <WalletIcon className="h-8 w-8 text-[rgb(132,189,0)]" />
               <h3 className="text-xl font-semibold">Weekly Pay</h3>
               <p className="text-[rgba(255,255,255,0.8)]">
@@ -184,7 +266,7 @@ export default function Jobs() {
                 a consistent and reliable income.
               </p>
             </div>
-            <div className="bg-[rgba(255,255,255,0.1)] rounded-lg p-6 space-y-4">
+            <div className="space-y-4 rounded-lg bg-[rgba(255,255,255,0.1)] p-6">
               <DollarSignIcon className="h-8 w-8 text-[rgb(132,189,0)]" />
               <h3 className="text-xl font-semibold">Best Rates</h3>
               <p className="text-[rgba(255,255,255,0.8)]">
@@ -193,7 +275,7 @@ export default function Jobs() {
                 work.
               </p>
             </div>
-            <div className="bg-[rgba(255,255,255,0.1)] rounded-lg p-6 space-y-4">
+            <div className="space-y-4 rounded-lg bg-[rgba(255,255,255,0.1)] p-6">
               <BriefcaseIcon className="h-8 w-8 text-[rgb(132,189,0)]" />
               <h3 className="text-xl font-semibold">Excellent Benefits</h3>
               <p className="text-[rgba(255,255,255,0.8)]">
@@ -204,19 +286,19 @@ export default function Jobs() {
           </div>
         </div>
       </section>
-      <section className="w-full py-12 md:py-24 lg:py-32 bg-[rgba(255,255,255,0.05)]">
-        <div className="container px-4 md:px-6 space-y-12">
-          <div className="text-center space-y-4">
-            <h2 className="text-3xl md:text-4xl font-bold">
+      <section className="w-full py-12 md:py-24 lg:py-32">
+        <div className="container space-y-12 px-4 md:px-6">
+          <div className="space-y-4 text-center">
+            <h2 className="text-3xl font-bold md:text-4xl">
               Benefits of Working with Us
             </h2>
-            <p className="max-w-3xl mx-auto text-[rgba(255,255,255,0.8)]">
+            <p className="mx-auto max-w-3xl text-[rgba(255,255,255,0.8)]">
               At Programmed Health Professionals, we are committed to supporting
               our healthcare professionals every step of the way.
             </p>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-[rgba(255,255,255,0.1)] rounded-lg p-6 space-y-4">
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="space-y-4 rounded-lg bg-[rgba(255,255,255,0.1)] p-6">
               <CalendarIcon className="h-8 w-8 text-[rgb(132,189,0)]" />
               <h3 className="text-xl font-semibold">Flexible Scheduling</h3>
               <p className="text-[rgba(255,255,255,0.8)]">
@@ -224,7 +306,7 @@ export default function Jobs() {
                 and preferences.
               </p>
             </div>
-            <div className="bg-[rgba(255,255,255,0.1)] rounded-lg p-6 space-y-4">
+            <div className="space-y-4 rounded-lg bg-[rgba(255,255,255,0.1)] p-6">
               <BriefcaseIcon className="h-8 w-8 text-[rgb(132,189,0)]" />
               <h3 className="text-xl font-semibold">Career Development</h3>
               <p className="text-[rgba(255,255,255,0.8)]">
@@ -232,7 +314,7 @@ export default function Jobs() {
                 skills and advance your career.
               </p>
             </div>
-            <div className="bg-[rgba(255,255,255,0.1)] rounded-lg p-6 space-y-4">
+            <div className="space-y-4 rounded-lg bg-[rgba(255,255,255,0.1)] p-6">
               <ClipboardIcon className="h-8 w-8 text-[rgb(132,189,0)]" />
               <h3 className="text-xl font-semibold">Personalized Support</h3>
               <p className="text-[rgba(255,255,255,0.8)]">
