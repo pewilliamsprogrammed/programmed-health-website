@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/component/header";
-import Footer from "@/components/component/footer";
+// import Header from "@/components/component/header";
+// import Footer from "@/components/component/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,11 +21,13 @@ const fontBody = Inter({
 });
 
 export const metadata: Metadata = {
+  robots: "follow, index",
   title: "Programmed Health | No 1 Nursing Agency in Australia",
   description:
     "Australia's busiest nursing agency is recruiting registered nurses, enrolled nurses, personal care attendants, personal service workers. Australias leading healthcare recruitment agency need nurse now for imediated start. Nursing agency in Austalia Melbourne, Sydney, Perth, Brisbane, and Adelaide.",
   keywords:
     "nursing agency, healthcare recruitment agency, nursing agency in Australia, nursing agency in Melbourne, nursing agency in Sydney, nursing agency in Perth, nursing agency in Brisbane, nursing agency in Adelaide, healthcare recruitment agency",
+
   openGraph: {
     title: "Programmed Health | No 1 Nursing Agency in Australia",
     description:
