@@ -13,7 +13,7 @@ export default function Header() {
         <div className="static flex items-center space-x-2">
           <MobileMenu />
           <Link
-            href="#"
+            href="/"
             className="flex items-center gap-2 pl-5 sm:p-0"
             prefetch={false}
           >
