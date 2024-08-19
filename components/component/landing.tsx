@@ -44,7 +44,7 @@ export default function Landing() {
                 className="font-medium text-[rgb(132,189,0)] hover:underline"
                 prefetch={false}
               >
-                Learn more
+                Find out more
               </Link>
             </div>
           </div>

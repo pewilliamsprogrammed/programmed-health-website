@@ -28,7 +28,7 @@ export default function Jobs() {
                 className="font-medium text-[rgb(132,189,0)] hover:underline"
                 prefetch={false}
               >
-                Learn More
+                Find out more
               </Link>
             </div>
           </div>
