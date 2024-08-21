@@ -202,9 +202,9 @@ export default function ContactUs() {
                     <h5 className="font-medium">General Enquiries</h5>
                     <Link
                       className="text-[rgba(255,255,255,0.8)]"
-                      href="mailto:info@programmedhealthprofessionals.com.au"
+                      href="mailto:health.professionals@programmed.com.au"
                     >
-                      info@programmed.com.au
+                      health.professionals@programmed.com.au
                     </Link>
                   </div>
                 </div>
@@ -214,9 +214,9 @@ export default function ContactUs() {
                     <h5 className="font-medium">Payroll Enquiries</h5>
                     <Link
                       className="text-[rgba(255,255,255,0.8)]"
-                      href="mailto:payroll@programmedhealthprofessionals.com.au"
+                      href="mailto:php.payroll@programmed.com.au"
                     >
-                      payroll@programmed.com.au
+                      php.payroll@programmed.com.au
                     </Link>
                   </div>
                 </div>
