@@ -291,7 +291,7 @@ export default function Jobs() {
             </div>
             <div className="space-y-4 rounded-lg bg-[rgba(255,255,255,0.1)] p-6">
               <ClipboardIcon className="h-8 w-8 text-[rgb(132,189,0)]" />
-              <h3 className="text-xl font-semibold">Personalized Support</h3>
+              <h3 className="text-xl font-semibold">Personalised Support</h3>
               <p className="text-[rgba(255,255,255,0.8)]">
                 Our dedicated team is here to support you every step of the way,
                 from onboarding to placement and beyond.
