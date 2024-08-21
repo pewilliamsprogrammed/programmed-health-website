@@ -24,6 +24,16 @@ export default function Jobs() {
             </p>
             <div className="flex flex-col items-center gap-4 sm:flex-row">
               <ApplyNow />
+              <Button
+                onClick={() => {
+                  track("Call");
+                }}
+                className="rounded-md bg-[rgb(132,189,0)] px-8 py-3 font-medium text-[rgb(12,35,64)] hover:bg-[rgb(106,152,0)]"
+              >
+                <Link href="tel:131195" prefetch={false}>
+                  Call 13 11 95
+                </Link>
+              </Button>
               <Link
                 href="/learn-more"
                 className="font-medium text-[rgb(132,189,0)] hover:underline"
