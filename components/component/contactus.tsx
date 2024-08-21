@@ -2,7 +2,6 @@
 
 import Header from "./header";
 import Link from "next/link";
-import { Button } from "@/components/ui/button";
 import Footer from "./footer";
 import { useState } from "react";
 
