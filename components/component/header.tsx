@@ -22,6 +22,9 @@ export default function Header() {
             <h1 className="invisible hidden text-xl font-medium italic lg:visible lg:block">
               Programmed Health Professionals
             </h1>
+            <h1 className="text-xl font-medium italic lg:invisible lg:hidden">
+              Programmed
+            </h1>
           </Link>
         </div>
         <nav className="hidden items-center gap-4 sm:flex">

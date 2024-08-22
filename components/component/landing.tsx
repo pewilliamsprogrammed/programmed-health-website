@@ -13,15 +13,24 @@ export default function Landing() {
       <main className="flex w-full flex-1 flex-col items-center justify-center px-4 py-12 md:px-6 md:py-24 lg:py-32">
         <div className="flex items-center justify-between space-x-6">
           <div className="max-w-3xl space-y-6 text-left">
-            <h1 className="text-4xl font-bold tracking-tight md:text-5xl">
-              Australia's largest nursing and healthcare staffing agency
-            </h1>
+            <div className="flex space-x-2 lg:space-x-0">
+              <h1 className="text-3xl font-bold tracking-tight md:text-5xl">
+                Australia's largest nursing and healthcare staffing agency
+              </h1>
+              <img
+                src="/landing.jpg"
+                alt="Nurse"
+                width={100}
+                height={100}
+                className="rounded-lg lg:hidden"
+                style={{ aspectRatio: "700/900", objectFit: "cover" }}
+              />
+            </div>
             <p className="text-lg text-[rgba(255,255,255,0.8)] md:text-xl">
               Programmed Health Professionals is a leading provider of
               healthcare staffing solutions in Australia. We have jobs available
               for registered nurses, enrolled nurses, and personal services
-              workers across the country. Join our team and start your next
-              adventure.
+              workers across the country. Join our team and get started today.
             </p>
 
             <p className="text-lg text-[rgba(255,255,255,0.8)] md:text-xl">
@@ -70,7 +79,7 @@ export default function Landing() {
               alt="Nurse"
               width={300}
               height={300}
-              className="hidden rounded-lg md:block"
+              className="hidden rounded-lg lg:block"
               style={{ aspectRatio: "700/900", objectFit: "cover" }}
             />
           </div>
