@@ -27,6 +27,73 @@ export default function ContactUs() {
             </p>
           </div>
           <div className="grid w-full grid-cols-1 justify-center gap-8 pt-12 md:grid-cols-2">
+            <div className="space-y-2">
+              <h3 className="text-xl font-semibold">Phone</h3>
+              <div className="flex items-start gap-4">
+                <PhoneIcon className="mt-1 text-[rgb(132,189,0)]" />
+                <div>
+                  <h5 className="font-medium">National Phone</h5>
+                  <Link
+                    className="text-[rgba(255,255,255,0.8)]"
+                    href="tel:13 11 48"
+                  >
+                    13 10 95
+                  </Link>
+                </div>
+              </div>
+
+              <h3 className="text-xl font-semibold">Emails</h3>
+              <div className="space-y-2">
+                <div className="flex items-start gap-4">
+                  <MailIcon className="mt-1 text-[rgb(132,189,0)]" />
+                  <div>
+                    <h5 className="font-medium">General Enquiries</h5>
+                    <Link
+                      className="text-[rgba(255,255,255,0.8)]"
+                      href="mailto:health.professionals@programmed.com.au"
+                    >
+                      health@programmed.com.au
+                    </Link>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <MailIcon className="mt-1 text-[rgb(132,189,0)]" />
+                  <div>
+                    <h5 className="font-medium">Payroll Enquiries</h5>
+                    <Link
+                      className="text-[rgba(255,255,255,0.8)]"
+                      href="mailto:php.payroll@programmed.com.au"
+                    >
+                      php.payroll@programmed.com.au
+                    </Link>
+                  </div>
+                </div>
+                {/* <div className="flex items-start gap-4">
+                  <MailIcon className="mt-1 text-[rgb(132,189,0)]" />
+                  <div>
+                    <h5 className="font-medium">Registration Enquiries</h5>
+                    <Link
+                      className="text-[rgba(255,255,255,0.8)]"
+                      href="registration@programmedhealthprofessionals.com.au"
+                    >
+                      registration@programmed.com.au
+                    </Link>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <MailIcon className="mt-1 text-[rgb(132,189,0)]" />
+                  <div>
+                    <h5 className="font-medium">Work Enquiries</h5>
+                    <Link
+                      className="text-[rgba(255,255,255,0.8)]"
+                      href="work@programmedhealthprofessionals.com.au"
+                    >
+                      work@programmed.com.au
+                    </Link>
+                  </div>
+                </div> */}
+              </div>
+            </div>
             <div className="space-y-6">
               <div className="space-y-2">
                 <h3 className="text-xl font-semibold">Addresses</h3>
@@ -174,73 +241,6 @@ export default function ContactUs() {
                         referrerPolicy="no-referrer-when-downgrade"
                       ></iframe>
                     )}
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="space-y-2">
-              <h3 className="text-xl font-semibold">Phone</h3>
-              <div className="flex items-start gap-4">
-                <PhoneIcon className="mt-1 text-[rgb(132,189,0)]" />
-                <div>
-                  <h5 className="font-medium">National Phone</h5>
-                  <Link
-                    className="text-[rgba(255,255,255,0.8)]"
-                    href="tel:13 11 48"
-                  >
-                    13 10 95
-                  </Link>
-                </div>
-              </div>
-
-              <h3 className="text-xl font-semibold">Emails</h3>
-              <div className="space-y-2">
-                <div className="flex items-start gap-4">
-                  <MailIcon className="mt-1 text-[rgb(132,189,0)]" />
-                  <div>
-                    <h5 className="font-medium">General Enquiries</h5>
-                    <Link
-                      className="text-[rgba(255,255,255,0.8)]"
-                      href="mailto:health.professionals@programmed.com.au"
-                    >
-                      health.professionals@programmed.com.au
-                    </Link>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <MailIcon className="mt-1 text-[rgb(132,189,0)]" />
-                  <div>
-                    <h5 className="font-medium">Payroll Enquiries</h5>
-                    <Link
-                      className="text-[rgba(255,255,255,0.8)]"
-                      href="mailto:php.payroll@programmed.com.au"
-                    >
-                      php.payroll@programmed.com.au
-                    </Link>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <MailIcon className="mt-1 text-[rgb(132,189,0)]" />
-                  <div>
-                    <h5 className="font-medium">Registration Enquiries</h5>
-                    <Link
-                      className="text-[rgba(255,255,255,0.8)]"
-                      href="registration@programmedhealthprofessionals.com.au"
-                    >
-                      registration@programmed.com.au
-                    </Link>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <MailIcon className="mt-1 text-[rgb(132,189,0)]" />
-                  <div>
-                    <h5 className="font-medium">Work Enquiries</h5>
-                    <Link
-                      className="text-[rgba(255,255,255,0.8)]"
-                      href="work@programmedhealthprofessionals.com.au"
-                    >
-                      work@programmed.com.au
-                    </Link>
                   </div>
                 </div>
               </div>
