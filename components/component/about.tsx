@@ -13,9 +13,20 @@ export default function About() {
       <main className="flex w-full flex-1 flex-col items-center justify-center px-4 py-12 md:px-6 md:py-24 lg:py-32">
         <div className="flex items-center justify-between space-x-6">
           <div className="max-w-3xl space-y-6 text-left">
-            <h1 className="text-4xl font-bold tracking-tight md:text-5xl">
-              About Programmed Health Professionals
-            </h1>
+            <div className="flex space-x-2 lg:space-x-0">
+              <h1 className="text-3xl font-bold tracking-tight md:text-5xl">
+                About Programmed Health Professionals
+              </h1>
+
+              <img
+                src="/landing.jpg"
+                alt="Nurse"
+                width={100}
+                height={100}
+                className="rounded-lg lg:hidden"
+                style={{ aspectRatio: "700/900", objectFit: "cover" }}
+              />
+            </div>
             <p className="text-lg text-[rgba(255,255,255,0.8)] md:text-xl">
               We are one of Australia's busiest nursing agencies, providing
               registered nurses, enrolled nurses, and personal services workers
@@ -45,6 +56,16 @@ export default function About() {
                   Apply Now
                 </Link>
               </Button>
+              <Button
+                onClick={() => {
+                  track("Call");
+                }}
+                className="rounded-md bg-[rgb(132,189,0)] px-8 py-3 font-medium text-[rgb(12,35,64)] hover:bg-[rgb(106,152,0)]"
+              >
+                <Link href="tel:131195" prefetch={false}>
+                  Call 13 11 95
+                </Link>
+              </Button>
               <Link
                 href="/learn-more"
                 className="font-medium text-[rgb(132,189,0)] hover:underline"
@@ -60,7 +81,7 @@ export default function About() {
               alt="Nurse"
               width={300}
               height={300}
-              className="hidden rounded-lg md:block"
+              className="hidden rounded-lg lg:block"
               style={{ aspectRatio: "700/900", objectFit: "cover" }}
             />
           </div>
