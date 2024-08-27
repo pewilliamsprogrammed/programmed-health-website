@@ -18,13 +18,34 @@ export default function Header() {
             className="flex items-center gap-2 pl-5 sm:p-0"
             prefetch={false}
           >
-            <Image src="/favicon.png" alt="logo" width={35} height={35} />
-            <h1 className="invisible hidden text-xl font-medium italic lg:visible lg:block">
+            <Image
+              className="text-xl font-medium italic sm:invisible sm:hidden"
+              src="/favicon.png"
+              alt="logo"
+              width={35}
+              height={35}
+            />
+            {/* <Image
+              className="invisible hidden text-xl font-medium italic md:visible md:block lg:invisible lg:hidden"
+              src="/Corporate Horizontal_Rev.png"
+              alt="logo"
+              width={220}
+              height={60}
+            /> */}
+            <Image
+              className="invisible hidden text-xl font-medium italic sm:visible sm:block"
+              src="/RGB_Programmed_Health_Professionals_REV.png"
+              alt="logo"
+              width={220}
+              height={60}
+            />
+
+            {/* <h1 className="invisible hidden text-xl font-medium italic lg:visible lg:block">
               Programmed Health Professionals
             </h1>
             <h1 className="text-xl font-medium italic lg:invisible lg:hidden">
               Programmed
-            </h1>
+            </h1> */}
           </Link>
         </div>
         <nav className="hidden items-center gap-4 sm:flex">
@@ -58,14 +79,14 @@ export default function Header() {
           </Link>
         </nav>
         <Button
-          className="rounded-md bg-[rgb(132,189,0)] px-6 py-2 font-medium text-[rgb(12,35,64)] hover:bg-[rgb(106,152,0)]"
+          className="rounded-md bg-[rgb(132,189,0)] px-6 py-2 font-bold text-[rgb(12,35,64)] hover:bg-[rgb(106,152,0)]"
           onClick={() => {
             track("Applynow");
           }}
         >
           <Link
             target="_blank"
-            href="https://php.fasttrack360.com.au/FastTrack.Web.Questionnaire/(S(fuzpugirjne1siuiax1e5yi4))/Questionnaire.page?Type=SbJobOrder&Reference=200000488&Source=Seek"
+            href="https://php.fasttrack360.com.au/FastTrack.Web.CandidateRegistration/CandidateRegistration.Page?RegistrationPageId=14"
             prefetch={false}
           >
             Apply Now

@@ -1,24 +1,43 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+// import { Inter } from "next/font/google";
+import { Lato } from "next/font/google";
 import "./globals.css";
 // import Header from "@/components/component/header";
 // import Footer from "@/components/component/footer";
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
+const inter = Lato({
+  subsets: ["latin"],
+  weight: "400",
+});
 
 import { Analytics } from "@vercel/analytics/react";
 
-const fontHeading = Inter({
+const fontHeading = Lato({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-heading",
+  weight: "400",
 });
 
-const fontBody = Inter({
+const fontBody = Lato({
   subsets: ["latin"],
   display: "swap",
   variable: "--font-body",
+  weight: "100",
 });
+
+// const fontHeading = Inter({
+//   subsets: ["latin"],
+//   display: "swap",
+//   variable: "--font-heading",
+// });
+
+// const fontBody = Inter({
+//   subsets: ["latin"],
+//   display: "swap",
+//   variable: "--font-body",
+// });
 
 export const metadata: Metadata = {
   robots: "follow, index",

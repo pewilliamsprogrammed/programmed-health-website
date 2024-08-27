@@ -43,11 +43,11 @@ export default function Landing() {
                 onClick={() => {
                   track("Applynow");
                 }}
-                className="rounded-md bg-[rgb(132,189,0)] px-8 py-3 font-medium text-[rgb(12,35,64)] hover:bg-[rgb(106,152,0)]"
+                className="rounded-md bg-[rgb(132,189,0)] px-8 py-3 font-bold text-[rgb(12,35,64)] hover:bg-[rgb(106,152,0)]"
               >
                 <Link
                   target="_blank"
-                  href="https://php.fasttrack360.com.au/FastTrack.Web.Questionnaire/(S(fuzpugirjne1siuiax1e5yi4))/Questionnaire.page?Type=SbJobOrder&Reference=200000488&Source=Seek"
+                  href="https://php.fasttrack360.com.au/FastTrack.Web.CandidateRegistration/CandidateRegistration.Page?RegistrationPageId=14"
                   prefetch={false}
                 >
                   Apply Now
@@ -58,7 +58,7 @@ export default function Landing() {
                 onClick={() => {
                   track("Call");
                 }}
-                className="rounded-md bg-[rgb(132,189,0)] px-8 py-3 font-medium text-[rgb(12,35,64)] hover:bg-[rgb(106,152,0)]"
+                className="rounded-md bg-[rgb(132,189,0)] px-8 py-3 font-bold text-[rgb(12,35,64)] hover:bg-[rgb(106,152,0)]"
               >
                 <Link href="tel:131195" prefetch={false}>
                   Call 13 11 95
@@ -66,7 +66,7 @@ export default function Landing() {
               </Button>
               <Link
                 href="/learn-more"
-                className="font-medium text-[rgb(132,189,0)] hover:underline"
+                className="font-bold text-[rgb(132,189,0)] hover:underline"
                 prefetch={false}
               >
                 Find out more
