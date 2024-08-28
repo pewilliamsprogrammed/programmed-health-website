@@ -15,7 +15,7 @@ export default function Landing() {
           <div className="max-w-3xl space-y-6 text-left">
             <div className="flex space-x-2 lg:space-x-0">
               <h1 className="text-3xl font-bold tracking-tight md:text-5xl">
-                Australia's most welcoming and friendly nursing & healthcare
+                Australia's friendliest and busiest nursing & healthcare
                 staffing agency
               </h1>
               <img
