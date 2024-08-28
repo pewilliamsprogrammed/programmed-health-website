@@ -7,7 +7,6 @@ import MobileMenu from "./mobile-menu";
 import { track } from "@vercel/analytics";
 
 export default function Header() {
-  const [showContacts, setShowContacts] = useState(false);
   return (
     <header className="flex justify-center border-b border-[rgba(255,255,255,0.1)] px-4 py-4 md:px-6">
       <div className="container flex items-center justify-between">

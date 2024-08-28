@@ -15,7 +15,8 @@ export default function Landing() {
           <div className="max-w-3xl space-y-6 text-left">
             <div className="flex space-x-2 lg:space-x-0">
               <h1 className="text-3xl font-bold tracking-tight md:text-5xl">
-                Australia's largest nursing and healthcare staffing agency
+                Australia's most welcoming and friendly nursing & healthcare
+                staffing agency
               </h1>
               <img
                 src="/landing.jpg"
@@ -34,9 +35,16 @@ export default function Landing() {
             </p>
 
             <p className="text-lg text-[rgba(255,255,255,0.8)] md:text-xl">
-              If you a <strong>certified</strong> registered nurse, enrolled
-              nurse, or personal services worker looking for work now. Tap below
-              to apply. Our team will be in touch right away.
+              If you a{" "}
+              <strong className="font-bold text-[rgb(132,189,0)]">
+                certified
+              </strong>{" "}
+              registered nurse, enrolled nurse, or personal services worker with{" "}
+              <strong className="font-bold text-[rgb(132,189,0)]">
+                working rights
+              </strong>{" "}
+              in Australia ready to work now then tap below to get started. Our
+              friendly team will be in touch right away.
             </p>
             <div className="flex flex-col items-center gap-4 sm:flex-row">
               <Button

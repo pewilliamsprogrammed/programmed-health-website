@@ -1,0 +1,225 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 14px;
+    font-family: Inter, Arial, sans-serif;
+    color: white;
+	background-color: #0c2340;
+}
+
+.small {
+    font-size: 14px;
+	font-family: Inter, Arial, sans-serif;
+}
+
+table {
+    width: 100%;
+}
+
+a {
+	color: #95a0af;
+}
+
+.required {
+    color: red;
+}
+
+#Wizard1_5_Q85_attachButton {
+	background-color: #84BD00;
+	color: rgb(12,35,64);
+	border-color: #84BD00;
+}
+
+#addSkillsOk {
+	background-color: #84BD00!important;
+	color: white!important;
+	border-color: #84BD00!important;
+}
+
+#confirmDialogYes {
+	background-color: #84BD00!important;
+	color: white!important;
+	border-color: #84BD00!important;
+}
+
+#editSkillOkButton {
+	background-color: #84BD00!important;
+	color: white!important;
+	border-color: #84BD00!important;
+}
+
+#confirmCloseSkillNo {
+	background-color: #84BD00!important;
+	color: white!important;
+	border-color: #84BD00!important;
+}
+
+.ui-datepicker-trigger {
+	background-color: #84BD00;
+    border: solid 1px #84BD00;
+    font-size: 0.9em;
+    color: #284775;
+    height: 21px;
+    margin-left: 2px;
+    border-radius: 5px;
+    padding-top: 5px;
+    color: white;
+    height: 30px;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #647488;
+}
+
+button.close {
+    color: white;
+}
+
+#Wizard1_5_Q85_removeButtonId {
+	background-color: #84BD00;
+	color: rgb(12,35,64);
+	border-color: #84BD00;
+}
+
+#Wizard1_addSkillsButton {
+	background-color: #84BD00;
+	color: rgb(12,35,64);
+	border-color: #84BD00;
+}
+
+input[type="file"] {
+	color: white;
+    margin-bottom: 5px;
+	background-color: #30435C;
+	font-family: Inter, Arial, sans-serif;
+	border: solid 1px #7c8a9b;
+}
+
+input[type="text"]:disabled {
+	color: white;
+    margin-bottom: 0px;
+	background-color: #30435C;
+	font-family: Inter, Arial, sans-serif;
+	border: solid 1px #7c8a9b;
+}
+
+input[type="text"] {
+	color: white;
+    margin-bottom: 5px;
+	background-color: #30435C;
+	font-family: Inter, Arial, sans-serif;
+	border: solid 1px #7c8a9b;
+}
+
+legend {
+    width: auto;
+    color: #5D7B9D;
+    border: 0;
+}
+
+img {
+	max-height: 60px;
+}
+
+#Wizard1_5_Q84Question {
+	display: block;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 20px;
+}
+
+.block {
+    margin-bottom: 15px;
+}
+
+.top-margin {
+	margin: auto!important;
+}
+
+.bordered {
+	background-color: #30435C!important;
+	color: white;
+	border: solid 1px #7c8a9b;
+	margin-bottom: 20px;
+}
+
+.modal-content {
+	background-color: #30435C!important;
+}
+
+.QuestionText {
+	padding-right: 4px;
+	font-size: 14px;
+	font-family: Inter, Arial, sans-serif;
+}
+
+.container {
+	padding-top: 15px;
+}
+
+.form-control {
+    height: 34px;
+    border-radius: 4px;
+    line-height: 1;
+	color: white;
+    margin-bottom: 5px;
+	background-color: #30435C;
+	font-family: Inter, Arial, sans-serif;
+	border: solid 1px #7c8a9b;
+}
+
+.control-label {
+    font-size: 15px;
+}
+
+#Wizard1_5_Q74_attachButton {
+	background-color: #84BD00;
+	border-color: #84BD00;
+	color: white;
+}
+
+#Wizard1_FinishNavigationTemplateContainerID_FinishButton {
+	width: 120px;
+	height: 40px;
+	background-color: #84BD00;
+	border-color: #84BD00;
+	font-weight: bold;
+	font-size: 16px;
+	color: white;
+}
+
+#Wizard1_addSkillsButton {
+	margin-bottom: 10px;
+}
+
+#headerImage {
+    content:url(https://programmed-health-website.vercel.app/RGB_Programmed_Health_Professionals_REV.png);
+}
+
+#footerImage {
+    content:url();
+}
+
+#Wizard1_requiredValidator {
+	margin-bottom: 20px;
+}
+
+
+@media (min-width: 1200px) {
+    .container {
+        width: 850px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    legend {
+        font-size: 17px;
+    }
+}
+
