@@ -35,7 +35,7 @@ export default function Landing() {
             </p>
 
             <p className="text-lg text-[rgba(255,255,255,0.8)] md:text-xl">
-              If you a{" "}
+              If you are a{" "}
               <strong className="font-bold text-[rgb(132,189,0)]">
                 certified
               </strong>{" "}
