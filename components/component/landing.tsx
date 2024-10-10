@@ -15,8 +15,7 @@ export default function Landing() {
           <div className="max-w-3xl space-y-6 text-left">
             <div className="flex space-x-2 lg:space-x-0">
               <h1 className="text-3xl font-bold tracking-tight md:text-5xl">
-                Australia's friendliest and busiest nursing & healthcare
-                staffing agency
+                Leading provider of healthcare staffing solutions
               </h1>
               <img
                 src="/landing.jpg"
@@ -28,12 +27,17 @@ export default function Landing() {
               />
             </div>
             <p className="text-lg text-[rgba(255,255,255,0.8)] md:text-xl">
-              Programmed Health Professionals is a leading provider of
-              healthcare staffing solutions in Australia. We have jobs available
-              for registered nurses, enrolled nurses, and personal services
-              workers across the country. Join our team and get started today.
+              At Programmed Health Professionals, we understand that nursing is 
+              more than just a job - it's a calling
             </p>
-
+            <p className="text-lg text-[rgba(255,255,255,0.8)] md:text-xl">
+              With over 45 years of experience, we offer registered and 
+              specialist nurses, midwives, technicians and support workers the 
+              opportunity to thrive in flexible, rewarding roles across acute 
+              care, aged care, disability support, and more. Whether you are 
+              seeking casual shifts or regional opportunities, our nursing 
+              agency has a job for you.             
+            </p>
             <p className="text-lg text-[rgba(255,255,255,0.8)] md:text-xl">
               If you are a{" "}
               <strong className="font-bold text-[rgb(132,189,0)]">
@@ -97,7 +101,7 @@ export default function Landing() {
         <div className="container space-y-12 px-4 md:px-6">
           <div className="space-y-4 text-center">
             <h2 className="text-3xl font-bold md:text-4xl">
-              Why Choose Programmed Health Professionals?
+              Why Nurses Choose Programmed Health Professionals?
             </h2>
             <p className="mx-auto max-w-3xl text-[rgba(255,255,255,0.8)]">
               We are committed to providing the best healthcare staffing
@@ -106,17 +110,7 @@ export default function Landing() {
               opportunities.
             </p>
           </div>
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            <div className="space-y-4 rounded-lg bg-[rgba(255,255,255,0.1)] p-6">
-              <BriefcaseIcon className="h-8 w-8 text-[rgb(132,189,0)]" />
-              <h3 className="text-xl font-semibold">
-                Wide Range of Opportunities
-              </h3>
-              <p className="text-[rgba(255,255,255,0.8)]">
-                We have jobs available for registered nurses, enrolled nurses,
-                and personal services workers across Australia.
-              </p>
-            </div>
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
             <div className="space-y-4 rounded-lg bg-[rgba(255,255,255,0.1)] p-6">
               <ClipboardIcon className="h-8 w-8 text-[rgb(132,189,0)]" />
               <h3 className="text-xl font-semibold">Streamlined Onboarding</h3>
@@ -126,17 +120,174 @@ export default function Landing() {
               </p>
             </div>
             <div className="space-y-4 rounded-lg bg-[rgba(255,255,255,0.1)] p-6">
-              <WalletIcon className="h-8 w-8 text-[rgb(132,189,0)]" />
-              <h3 className="text-xl font-semibold">Competitive Rates</h3>
+              <CalendarIcon className="h-8 w-8 text-[rgb(132,189,0)]" />
+              <h3 className="text-xl font-semibold">Flexible Work Schedules</h3>
               <p className="text-[rgba(255,255,255,0.8)]">
-                We offer competitive rates and excellent benefits to ensure our
-                healthcare professionals are well-compensated.
+                Choose the hours and shifts that fit your lifestyle from day 
+                shifts to nights and everything in between. We have 
+                opportunities in hospitals across Metroplitan and regional 
+                areas, aged care facilities, and community settings across 
+                Australia. 
+              </p>
+            </div>
+            <div className="space-y-4 rounded-lg bg-[rgba(255,255,255,0.1)] p-6">
+              <WalletIcon className="h-8 w-8 text-[rgb(132,189,0)]" />
+              <h3 className="text-xl font-semibold">Competitive Pay Rates</h3>
+              <p className="text-[rgba(255,255,255,0.8)]">
+                We value your skills and experience, offering above-average pay 
+                rates and timely payments, ensuring you're rewarded for the 
+                essential work you do. 
+              </p>
+            </div>
+            <div className="space-y-4 rounded-lg bg-[rgba(255,255,255,0.1)] p-6">
+              <BriefcaseIcon className="h-8 w-8 text-[rgb(132,189,0)]" />
+              <h3 className="text-xl font-semibold">Career Growth</h3>
+              <p className="text-[rgba(255,255,255,0.8)]">
+                We provide ongoing training, skills development, and the chance 
+                to work in a variety of healthcare environments, helping you 
+                build a diverse and rewarding nursing career.  
+              </p>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+      <section className="flex w-full justify-center py-12 md:py-24 lg:py-32">
+        <div className="container space-y-12 px-4 md:px-6">
+          <div className="space-y-4 text-center">
+            <h2 className="text-3xl font-bold md:text-4xl">
+              Nursing Opportunities Across Multiple Sectors 
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="space-y-4 rounded-lg bg-[rgba(255,255,255,0.1)] p-6">
+              <HospitalIcon className="h-8 w-8 text-[rgb(132,189,0)]" />
+              <h3 className="text-xl font-semibold">Acute & Non-Acute Nursing</h3>
+              <p className="text-[rgba(255,255,255,0.8)]">
+                Work in hospital settings. We place highly qualified Registered 
+                Nurses, Enrolled Nurses, and Assistants in Nursing in various 
+                specialties, including ICU, mental health, Theatre and 
+                paediatrics.
+              </p>
+            </div>
+            <div className="space-y-4 rounded-lg bg-[rgba(255,255,255,0.1)] p-6">
+              <MapPinIcon className="h-8 w-8 text-[rgb(132,189,0)]" />
+              <h3 className="text-xl font-semibold">Regional & Remote placements</h3>
+              <p className="text-[rgba(255,255,255,0.8)]">
+                Expand your horizons by working in rural or remote areas for 
+                contracted periods, where your skills are in high demand, 
+                offering a unique and rewarding experience. 
+              </p>
+            </div>
+            <div className="space-y-4 rounded-lg bg-[rgba(255,255,255,0.1)] p-6">
+              <BriefcaseIcon className="h-8 w-8 text-[rgb(132,189,0)]" />
+              <h3 className="text-xl font-semibold">Aged Care & Community Nursing</h3>
+              <p className="text-[rgba(255,255,255,0.8)]">
+                Play a vital role in providing compassionate care for elderly 
+                patients in residential or community settings, improving their 
+                quality of life and supporting care needs post discharge from acute settings. 
+              </p>
+            </div>
+            <div className="space-y-4 rounded-lg bg-[rgba(255,255,255,0.1)] p-6">
+              <BriefcaseIcon className="h-8 w-8 text-[rgb(132,189,0)]" />
+              <h3 className="text-xl font-semibold">Disability Support</h3>
+              <p className="text-[rgba(255,255,255,0.8)]">
+                Assist individuals with disabilities, offering personal care, 
+                medical support, and companionship that make a real difference 
+                in their daily lives. 
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="flex w-full justify-center bg-[rgba(255,255,255,0.05)] py-12 md:py-24 lg:py-32">
+        <div className="container space-y-12 px-4 md:px-6">
+          <div className="space-y-4 text-center">
+            <h2 className="text-3xl font-bold md:text-4xl">
+              What Programmed Offers Nurses 
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="space-y-4 rounded-lg bg-[rgba(255,255,255,0.1)] p-6">
+              <BriefcaseIcon className="h-8 w-8 text-[rgb(132,189,0)]" />
+              <h3 className="text-xl font-semibold">Work-Ready from Day One</h3>
+              <p className="text-[rgba(255,255,255,0.8)]">
+                We handle all the details and compliance checks to ensure you 
+                can start work without any unnecessary delays. 
+              </p>
+            </div>
+            <div className="space-y-4 rounded-lg bg-[rgba(255,255,255,0.1)] p-6">
+              <BriefcaseIcon className="h-8 w-8 text-[rgb(132,189,0)]" />
+              <h3 className="text-xl font-semibold">Continuous Learning</h3>
+              <p className="text-[rgba(255,255,255,0.8)]">
+                We offer education and compliance training, ensuring you stay 
+                current with nursing practices and maintain your qualifications 
+                with ease.  
+              </p>
+            </div>
+            <div className="space-y-4 rounded-lg bg-[rgba(255,255,255,0.1)] p-6">
+              <BriefcaseIcon className="h-8 w-8 text-[rgb(132,189,0)]" />
+              <h3 className="text-xl font-semibold">Dedicated Allocations Team</h3>
+              <p className="text-[rgba(255,255,255,0.8)]">
+                We work around the clock to match you with available shifts 
+                that fit your skills, experience, and preferred location. 
+              </p>
+            </div>
+            <div className="space-y-4 rounded-lg bg-[rgba(255,255,255,0.1)] p-6">
+              <BriefcaseIcon className="h-8 w-8 text-[rgb(132,189,0)]" />
+              <h3 className="text-xl font-semibold">Comprehensive Support & Safety</h3>
+              <p className="text-[rgba(255,255,255,0.8)]">
+                Our commitment to safety and wellbeing ensures that you work in 
+                a safe, compliant environment with access to ongoing health and 
+                safety support.  
               </p>
             </div>
           </div>
         </div>
       </section>
       <section className="flex w-full justify-center py-12 md:py-24 lg:py-32">
+        <div className="container space-y-12 px-4 md:px-6">
+          <div className="space-y-4 text-center">
+            <h2 className="text-3xl font-bold md:text-4xl">
+              Career Tailored to You  
+            </h2>
+            <p className="mx-auto max-w-3xl text-[rgba(255,255,255,0.8)]">
+              At Programmed, you're not just filling shifts - you’re building a 
+              career. If you are a nurse seeking greater flexibility and 
+              variety, we have the nursing jobs to match your ambitions. From 
+              metropolitan hospitals to remote healthcare settings, Programmed 
+              offers nurses the chance to grow, learn, and make a real impact. 
+            </p>
+          </div>
+        </div>
+      </section>    
+      <section className="flex w-full justify-center bg-[rgba(255,255,255,0.05)] py-12 md:py-24 lg:py-32">
+        <div className="container space-y-12 px-4 md:px-6">
+          <div className="space-y-4 text-center">
+            <h2 className="text-3xl font-bold md:text-4xl">
+              Ready to Take the Next Step in Your Nursing Career?   
+            </h2>
+            <p className="mx-auto max-w-3xl text-[rgba(255,255,255,0.8)]">
+              Join thousands of nurses across Australia who trust Programmed 
+              to connect them with meaningful work. We’re always looking for 
+              passionate, skilled staff to join our team. 
+            </p>
+          </div>
+        </div>
+      </section>   
+      <section className="flex w-full justify-center py-12 md:py-24 lg:py-32">
+        <div className="container space-y-12 px-4 md:px-6">
+          <div className="space-y-4 text-center">
+            <h2 className="text-3xl font-bold md:text-4xl">
+              Locations
+            </h2>
+            <p className="mx-auto max-w-3xl text-[rgba(255,255,255,0.8)]">
+              (links to google office locations in five states)  
+            </p>
+          </div>
+        </div>
+      </section>   
+{/*       <section className="flex w-full justify-center py-12 md:py-24 lg:py-32">
         <div className="container space-y-12 px-4 md:px-6">
           <div className="space-y-4 text-center">
             <h2 className="text-3xl font-bold md:text-4xl">
@@ -175,8 +326,8 @@ export default function Landing() {
             </div>
           </div>
         </div>
-      </section>
-      <section className="flex w-full justify-center bg-[rgba(255,255,255,0.05)] py-12 md:py-24 lg:py-32">
+      </section> */}
+{/*       <section className="flex w-full justify-center bg-[rgba(255,255,255,0.05)] py-12 md:py-24 lg:py-32">
         <div className="container space-y-12 px-4 md:px-6">
           <div className="space-y-4 text-center">
             <h2 className="text-3xl font-bold md:text-4xl">
@@ -214,8 +365,8 @@ export default function Landing() {
             </div>
           </div>
         </div>
-      </section>
-      <section className="flex w-full justify-center py-12 md:py-24 lg:py-32">
+      </section> */}
+{/*       <section className="flex w-full justify-center py-12 md:py-24 lg:py-32">
         <div className="container space-y-12 px-4 md:px-6">
           <div className="space-y-4 text-center">
             <h2 className="text-3xl font-bold md:text-4xl">
@@ -300,7 +451,7 @@ export default function Landing() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       <Footer />
     </div>
   );
@@ -557,6 +708,26 @@ function DollarSignIcon(props: { className: string }) {
     >
       <line x1="12" x2="12" y1="2" y2="22" />
       <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+    </svg>
+  );
+}
+
+function MapPinIcon(props: { className: string }) {
+  return (
+    <svg
+      {...props}
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+      <circle cx="12" cy="10" r="3" />
     </svg>
   );
 }

@@ -171,7 +171,7 @@ export default function Jobs() {
               <div className="flex items-center space-x-2">
                 <HospitalIcon className="h-8 w-8 text-[rgb(132,189,0)]" />
                 <h3 className="text-xl font-semibold">
-                  Far North Queenslane (remote)
+                  Far North Queensland (remote)
                 </h3>
               </div>
 
