@@ -28,7 +28,7 @@ export default function Landing() {
             </div>
             <p className="text-lg text-[rgba(255,255,255,0.8)] md:text-xl">
               At Programmed Health Professionals, we understand that nursing is 
-              more than just a job - it's a calling
+              more than just a job - it's a calling.
             </p>
             <p className="text-lg text-[rgba(255,255,255,0.8)] md:text-xl">
               With over 45 years of experience, we offer registered and 
@@ -37,18 +37,6 @@ export default function Landing() {
               care, aged care, disability support, and more. Whether you are 
               seeking casual shifts or regional opportunities, our nursing 
               agency has a job for you.             
-            </p>
-            <p className="text-lg text-[rgba(255,255,255,0.8)] md:text-xl">
-              If you are a{" "}
-              <strong className="font-bold text-[rgb(132,189,0)]">
-                certified
-              </strong>{" "}
-              registered nurse, enrolled nurse, or personal services worker with{" "}
-              <strong className="font-bold text-[rgb(132,189,0)]">
-                working rights
-              </strong>{" "}
-              in Australia ready to work now then tap below to get started. Our
-              friendly team will be in touch right away.
             </p>
             <div className="flex flex-col items-center gap-4 sm:flex-row">
               <Button
