@@ -91,12 +91,6 @@ export default function Landing() {
             <h2 className="text-3xl font-bold md:text-4xl">
               Why Nurses Choose Programmed Health Professionals?
             </h2>
-            <p className="mx-auto max-w-3xl text-[rgba(255,255,255,0.8)]">
-              We are committed to providing the best healthcare staffing
-              solutions in Australia. Our team of experts works tirelessly to
-              match the right healthcare professionals with the right
-              opportunities.
-            </p>
           </div>
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
             <div className="space-y-4 rounded-lg bg-[rgba(255,255,255,0.1)] p-6">
@@ -136,7 +130,6 @@ export default function Landing() {
                 build a diverse and rewarding nursing career.  
               </p>
             </div>
-            
           </div>
         </div>
       </section>
@@ -144,7 +137,39 @@ export default function Landing() {
         <div className="container space-y-12 px-4 md:px-6">
           <div className="space-y-4 text-center">
             <h2 className="text-3xl font-bold md:text-4xl">
-              Nursing Opportunities Across Multiple Sectors 
+              Career Tailored to You  
+            </h2>
+            <p className="mx-auto max-w-3xl text-[rgba(255,255,255,0.8)]">
+              At Programmed, you're not just filling shifts - you’re building a 
+              career. If you are a nurse seeking greater flexibility and 
+              variety, we have the nursing jobs to match your ambitions. From 
+              metropolitan hospitals to remote healthcare settings, Programmed 
+              offers nurses the chance to grow, learn, and make a real impact. 
+            </p>
+          </div>
+          <div className="flex flex-col items-center gap-4 sm:flex-row">
+              <Button
+                onClick={() => {
+                  track("Applynow");
+                }}
+                className="rounded-md bg-[rgb(132,189,0)] px-8 py-3 font-bold text-[rgb(12,35,64)] hover:bg-[rgb(106,152,0)]"
+              >
+                <Link
+                  target="_blank"
+                  href="https://php.fasttrack360.com.au/FastTrack.Web.CandidateRegistration/CandidateRegistration.Page?RegistrationPageId=14"
+                  prefetch={false}
+                >
+                  Apply Now
+                </Link>
+              </Button>
+          </div>
+        </div>
+      </section>    
+      <section className="flex w-full justify-center bg-[rgba(255,255,255,0.05)] py-12 md:py-24 lg:py-32">
+        <div className="container space-y-12 px-4 md:px-6">
+          <div className="space-y-4 text-center">
+            <h2 className="text-3xl font-bold md:text-4xl">
+              Nursing Opportunities Across Multiple Sectors and Locations
             </h2>
           </div>
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
@@ -168,7 +193,7 @@ export default function Landing() {
               </p>
             </div>
             <div className="space-y-4 rounded-lg bg-[rgba(255,255,255,0.1)] p-6">
-              <BriefcaseIcon className="h-8 w-8 text-[rgb(132,189,0)]" />
+              <HospitalIcon className="h-8 w-8 text-[rgb(132,189,0)]" />
               <h3 className="text-xl font-semibold">Aged Care & Community Nursing</h3>
               <p className="text-[rgba(255,255,255,0.8)]">
                 Play a vital role in providing compassionate care for elderly 
@@ -177,7 +202,7 @@ export default function Landing() {
               </p>
             </div>
             <div className="space-y-4 rounded-lg bg-[rgba(255,255,255,0.1)] p-6">
-              <BriefcaseIcon className="h-8 w-8 text-[rgb(132,189,0)]" />
+              <HospitalIcon className="h-8 w-8 text-[rgb(132,189,0)]" />
               <h3 className="text-xl font-semibold">Disability Support</h3>
               <p className="text-[rgba(255,255,255,0.8)]">
                 Assist individuals with disabilities, offering personal care, 
@@ -188,6 +213,36 @@ export default function Landing() {
           </div>
         </div>
       </section>
+      <section className="flex w-full justify-center py-12 md:py-24 lg:py-32">
+        <div className="container space-y-12 px-4 md:px-6">
+          <div className="space-y-4 text-center">
+            <h2 className="text-3xl font-bold md:text-4xl">
+              Ready to Take the Next Step in Your Nursing Career?   
+            </h2>
+            <p className="mx-auto max-w-3xl text-[rgba(255,255,255,0.8)]">
+              Join thousands of nurses across Australia who trust Programmed 
+              to connect them with meaningful work. We’re always looking for 
+              passionate, skilled staff to join our team. 
+            </p>
+          </div>
+          <div className="flex flex-col items-center gap-4 sm:flex-row">
+              <Button
+                onClick={() => {
+                  track("Applynow");
+                }}
+                className="rounded-md bg-[rgb(132,189,0)] px-8 py-3 font-bold text-[rgb(12,35,64)] hover:bg-[rgb(106,152,0)]"
+              >
+                <Link
+                  target="_blank"
+                  href="https://php.fasttrack360.com.au/FastTrack.Web.CandidateRegistration/CandidateRegistration.Page?RegistrationPageId=14"
+                  prefetch={false}
+                >
+                  Apply Now
+                </Link>
+              </Button>
+          </div>
+        </div>
+      </section> 
       <section className="flex w-full justify-center bg-[rgba(255,255,255,0.05)] py-12 md:py-24 lg:py-32">
         <div className="container space-y-12 px-4 md:px-6">
           <div className="space-y-4 text-center">
@@ -233,37 +288,7 @@ export default function Landing() {
           </div>
         </div>
       </section>
-      <section className="flex w-full justify-center py-12 md:py-24 lg:py-32">
-        <div className="container space-y-12 px-4 md:px-6">
-          <div className="space-y-4 text-center">
-            <h2 className="text-3xl font-bold md:text-4xl">
-              Career Tailored to You  
-            </h2>
-            <p className="mx-auto max-w-3xl text-[rgba(255,255,255,0.8)]">
-              At Programmed, you're not just filling shifts - you’re building a 
-              career. If you are a nurse seeking greater flexibility and 
-              variety, we have the nursing jobs to match your ambitions. From 
-              metropolitan hospitals to remote healthcare settings, Programmed 
-              offers nurses the chance to grow, learn, and make a real impact. 
-            </p>
-          </div>
-        </div>
-      </section>    
-      <section className="flex w-full justify-center bg-[rgba(255,255,255,0.05)] py-12 md:py-24 lg:py-32">
-        <div className="container space-y-12 px-4 md:px-6">
-          <div className="space-y-4 text-center">
-            <h2 className="text-3xl font-bold md:text-4xl">
-              Ready to Take the Next Step in Your Nursing Career?   
-            </h2>
-            <p className="mx-auto max-w-3xl text-[rgba(255,255,255,0.8)]">
-              Join thousands of nurses across Australia who trust Programmed 
-              to connect them with meaningful work. We’re always looking for 
-              passionate, skilled staff to join our team. 
-            </p>
-          </div>
-        </div>
-      </section>   
-      <section className="flex w-full justify-center py-12 md:py-24 lg:py-32">
+{/*       <section className="flex w-full justify-center py-12 md:py-24 lg:py-32">
         <div className="container space-y-12 px-4 md:px-6">
           <div className="space-y-4 text-center">
             <h2 className="text-3xl font-bold md:text-4xl">
@@ -274,7 +299,7 @@ export default function Landing() {
             </p>
           </div>
         </div>
-      </section>   
+      </section>  */}  
 {/*       <section className="flex w-full justify-center py-12 md:py-24 lg:py-32">
         <div className="container space-y-12 px-4 md:px-6">
           <div className="space-y-4 text-center">
