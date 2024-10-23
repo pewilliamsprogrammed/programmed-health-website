@@ -1,9 +1,11 @@
 "use client";
 
+import { Button } from "../ui/button";
 import Header from "./header";
 import Link from "next/link";
 import Footer from "./footer";
 import { useState } from "react";
+import { track } from "@vercel/analytics";
 
 export default function ContactUs() {
   const [showVic, setShowVic] = useState(false);
@@ -23,7 +25,7 @@ export default function ContactUs() {
               Contact Us
             </h1>
             <p className="text-lg text-[rgba(255,255,255,0.8)] md:text-xl">
-              Get in touch with our team for more information.
+              Get in touch with our team today.
             </p>
           </div>
           <div className="grid w-full grid-cols-1 justify-center gap-8 pt-12 md:grid-cols-2">
@@ -32,7 +34,7 @@ export default function ContactUs() {
               <div className="flex items-start gap-4">
                 <PhoneIcon className="mt-1 text-[rgb(132,189,0)]" />
                 <div>
-                  <h5 className="font-medium">National Phone</h5>
+                  <h5 className="font-medium">General enquiries</h5>
                   <Link
                     className="text-[rgba(255,255,255,0.8)]"
                     href="tel:13 11 48"
@@ -47,7 +49,7 @@ export default function ContactUs() {
                 <div className="flex items-start gap-4">
                   <MailIcon className="mt-1 text-[rgb(132,189,0)]" />
                   <div>
-                    <h5 className="font-medium">General Enquiries</h5>
+                    <h5 className="font-medium">Email</h5>
                     <Link
                       className="text-[rgba(255,255,255,0.8)]"
                       href="mailto:health.professionals@programmed.com.au"
@@ -68,19 +70,8 @@ export default function ContactUs() {
                     </Link>
                   </div>
                 </div>
-                {/* <div className="flex items-start gap-4">
-                  <MailIcon className="mt-1 text-[rgb(132,189,0)]" />
-                  <div>
-                    <h5 className="font-medium">Registration Enquiries</h5>
-                    <Link
-                      className="text-[rgba(255,255,255,0.8)]"
-                      href="registration@programmedhealthprofessionals.com.au"
-                    >
-                      registration@programmed.com.au
-                    </Link>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
+
+                {/*<div className="flex items-start gap-4">
                   <MailIcon className="mt-1 text-[rgb(132,189,0)]" />
                   <div>
                     <h5 className="font-medium">Work Enquiries</h5>
@@ -93,17 +84,35 @@ export default function ContactUs() {
                   </div>
                 </div> */}
               </div>
+              
+              <h3 className="text-xl font-semibold">Job applications</h3>
+              <div className="flex items-start gap-4">
+                <Button
+                  onClick={() => {
+                  track("Applynow");
+                }}
+                className="rounded-md bg-[rgb(132,189,0)] px-8 py-3 font-bold text-[rgb(12,35,64)] hover:bg-[rgb(106,152,0)]"
+                >
+                <Link
+                  target="_blank"
+                  href="https://php.fasttrack360.com.au/FastTrack.Web.CandidateRegistration/CandidateRegistration.Page?RegistrationPageId=14"
+                  prefetch={false}
+                >
+                  Apply Now
+                </Link>
+                </Button>
+              </div>
             </div>
             <div className="space-y-6">
               <div className="space-y-2">
-                <h3 className="text-xl font-semibold">Addresses</h3>
+                <h3 className="text-xl font-semibold">Office locations</h3>
                 <div className="space-y-2">
                   <div className="flex items-start gap-4">
                     <div onClick={() => setShowVic(!showVic)}>
                       <MapPinIcon className="mt-1 cursor-pointer text-[rgb(132,189,0)]" />
                     </div>
                     <div>
-                      <h6 className="font-medium">Victoria</h6>
+                      <h6 className="font-medium">Melbourne | Victoria</h6>
                       <p className="text-[rgba(255,255,255,0.8)]">
                         Level 32, Tower 2, 727 Collins Street
                       </p>
@@ -127,12 +136,12 @@ export default function ContactUs() {
                       <MapPinIcon className="mt-1 cursor-pointer text-[rgb(132,189,0)]" />
                     </div>
                     <div>
-                      <h6 className="font-medium">Western Australia</h6>
+                      <h6 className="font-medium">Perth | Western Australia</h6>
                       <p className="text-[rgba(255,255,255,0.8)]">
-                        47 Burswood Road
+                        Level 1, F1, 59 Albany Highway 
                       </p>
                       <p className="text-[rgba(255,255,255,0.8)]">
-                        Burswood WA, 6100
+                        Victoria Park WA 6100
                       </p>
                       {showWA && (
                         <iframe
@@ -151,7 +160,7 @@ export default function ContactUs() {
                       <MapPinIcon className="mt-1 cursor-pointer text-[rgb(132,189,0)]" />
                     </div>
                     <div>
-                      <h6 className="font-medium">South Australia</h6>
+                      <h6 className="font-medium">Adelaide | South Australia </h6>
                       <p className="text-[rgba(255,255,255,0.8)]">
                         115 Sherriff Street
                       </p>
@@ -175,7 +184,7 @@ export default function ContactUs() {
                       <MapPinIcon className="mt-1 cursor-pointer text-[rgb(132,189,0)]" />
                     </div>
                     <div>
-                      <h6 className="font-medium">Queensland</h6>
+                      <h6 className="font-medium">Brisbane | Queensland  </h6>
                       <p className="text-[rgba(255,255,255,0.8)]">
                         Level 3, 200 Creek Street
                       </p>
@@ -194,7 +203,7 @@ export default function ContactUs() {
                       )}
                     </div>
                   </div>
-                  <div className="flex items-start gap-4">
+{/*                   <div className="flex items-start gap-4">
                     <div onClick={() => setShowNSW1(!showNSW1)}>
                       <MapPinIcon className="mt-1 cursor-pointer text-[rgb(132,189,0)]" />
                     </div>
@@ -217,30 +226,30 @@ export default function ContactUs() {
                         ></iframe>
                       )}
                     </div>
-                  </div>
-                </div>
-                <div className="flex items-start gap-4">
-                  <div onClick={() => setShowNSW2(!showNSW2)}>
-                    <MapPinIcon className="mt-1 cursor-pointer text-[rgb(132,189,0)]" />
-                  </div>
-                  <div>
-                    <h6 className="font-medium">New South Wales</h6>
-                    <p className="text-[rgba(255,255,255,0.8)]">
-                      Level 6, 111 Phillip Street
-                    </p>
-                    <p className="text-[rgba(255,255,255,0.8)]">
-                      Parramatta NSW, 2150
-                    </p>
-                    {showNSW2 && (
-                      <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3314.9411278726275!2d151.00655287669375!3d-33.81383231621575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12a31975296d65%3A0x83d25d00a36d500c!2sLevel%206%2F111%20Phillip%20St%2C%20Parramatta%20NSW%202150!5e0!3m2!1sen!2sau!4v1724048352999!5m2!1sen!2sau"
-                        width="300"
-                        height="300"
-                        className="rounded-lg border-0"
-                        loading="lazy"
-                        referrerPolicy="no-referrer-when-downgrade"
-                      ></iframe>
-                    )}
+                  </div> */}
+                  <div className="flex items-start gap-4">
+                    <div onClick={() => setShowNSW2(!showNSW2)}>
+                      <MapPinIcon className="mt-1 cursor-pointer text-[rgb(132,189,0)]" />
+                    </div>
+                    <div>
+                      <h6 className="font-medium">Sydney | New South Wales</h6>
+                      <p className="text-[rgba(255,255,255,0.8)]">
+                        Level 6, 111 Phillip Street
+                      </p>
+                      <p className="text-[rgba(255,255,255,0.8)]">
+                        Parramatta NSW, 2150
+                      </p>
+                      {showNSW2 && (
+                        <iframe
+                          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3314.9411278726275!2d151.00655287669375!3d-33.81383231621575!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12a31975296d65%3A0x83d25d00a36d500c!2sLevel%206%2F111%20Phillip%20St%2C%20Parramatta%20NSW%202150!5e0!3m2!1sen!2sau!4v1724048352999!5m2!1sen!2sau"
+                          width="300"
+                          height="300"
+                          className="rounded-lg border-0"
+                          loading="lazy"
+                          referrerPolicy="no-referrer-when-downgrade"
+                        ></iframe>
+                      )}
+                    </div>
                   </div>
                 </div>
               </div>

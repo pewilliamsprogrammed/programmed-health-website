@@ -28,19 +28,19 @@ export default function About() {
               />
             </div>
             <p className="text-lg text-[rgba(255,255,255,0.8)] md:text-xl">
-              We are one of Australia's busiest nursing agencies, providing
-              registered nurses, enrolled nurses, and personal services workers
-              to healthcare facilities across the country. Our mission is to
-              connect talented healthcare professionals with rewarding job
-              opportunities and support them in delivering exceptional patient
-              care.
+              At Programmed Health Professionals, we specialise in providing 
+              skilled health professionals across a wide range of settings, 
+              from acute and non-acute sectors. Our workforce includes 
+              experienced registered and specialist nurses, midwives, 
+              technicians and support workers, ensuring high-quality care 
+              wherever it’s needed. 
             </p>
 
-            <p className="text-lg text-[rgba(255,255,255,0.8)] md:text-xl">
+{/*             <p className="text-lg text-[rgba(255,255,255,0.8)] md:text-xl">
               If you a <strong>certified</strong> registered nurse, enrolled
               nurse, or personal services worker looking for work now. Tap below
               to apply. Our team will be in touch right away.
-            </p>
+            </p> */}
             <div className="flex flex-col items-center gap-4 sm:flex-row">
               <Button
                 className="rounded-md bg-[rgb(132,189,0)] px-8 py-3 font-bold text-[rgb(12,35,64)] hover:bg-[rgb(106,152,0)]"
@@ -66,13 +66,6 @@ export default function About() {
                   Call 13 11 95
                 </Link>
               </Button>
-              <Link
-                href="/learn-more"
-                className="font-bold text-[rgb(132,189,0)] hover:underline"
-                prefetch={false}
-              >
-                Find out more
-              </Link>
             </div>
           </div>
           <div>
@@ -91,16 +84,22 @@ export default function About() {
         <div className="container space-y-12 px-4 md:px-6">
           <div className="space-y-4 text-center">
             <h2 className="text-3xl font-bold md:text-4xl">
-              40 years of excellence in healthcare recruitment
+              A Trusted Leader in Health Staffing Since 1977
             </h2>
             <p className="mx-auto max-w-3xl text-[rgba(255,255,255,0.8)]">
-              With over a 40 years of experience in the industry, we have built
-              a reputation for excellence and reliability. Our team of dedicated
-              recruiters work closely with our clients to understand their
-              unique staffing needs and match them with the right candidates.
+              With over 45 years of experience, Programmed Health Professionals has been at the forefront of 
+              healthcare staffing solutions. Established in 1977 ass AAA Nursing, then Nursing Australia, and 
+              now Programmed Health Professionals, we have evolved into an industry leader, consistently 
+              delivering reliable and professional temporary nursing and support services. 
+
+              Our business model is built on recruiting, deploying, and managing a large workforce. This enables 
+              us to quickly respond to the staffing needs of healthcare providers, whether it’s for temporary, or 
+              contract roles. Programmed Health Professionals' extensive and active database of nurses and 
+              other healthcare professionals allows us to fill casual vacancies in just hours, ensuring your facility 
+              remains fully staffed.
             </p>
           </div>
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+{/*           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
             <div className="space-y-4 rounded-lg bg-[rgba(255,255,255,0.1)] p-6">
               <CalendarIcon className="h-8 w-8 text-[rgb(132,189,0)]" />
               <h3 className="text-xl font-semibold">Flexible Scheduling</h3>
@@ -125,23 +124,23 @@ export default function About() {
                 from onboarding to placement and beyond.
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
       <section className="flex w-full justify-center py-12 md:py-24 lg:py-32">
         <div className="container space-y-12 px-4 md:px-6">
           <div className="space-y-4 text-center">
             <h2 className="text-3xl font-bold md:text-4xl">
-              Committed to quality and customer satisfaction
+              Our Commitment to Quality and Safety
             </h2>
             <p className="mx-auto max-w-3xl text-[rgba(255,255,255,0.8)]">
-              We take pride in our dedication to quality and customer
-              satisfaction. Our team works tirelessly to ensure that every
-              placement is a success, and we are committed to supporting our
-              nurses and clients every step of the way.
+              At Programmed Health Professionals, we maintain stringent quality control measures to ensure 
+              every health professional we provide has the necessary skills, competencies, and qualifications. 
+              Our rigorous screening, induction, and accreditation processes ensure that your staff meet the 
+              highest standards of care. 
             </p>
           </div>
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+{/*           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
             <div className="space-y-4 rounded-lg bg-[rgba(255,255,255,0.1)] p-6">
               <BookIcon className="h-8 w-8 text-[rgb(132,189,0)]" />
               <h3 className="text-xl font-semibold">Continuing Education</h3>
@@ -171,7 +170,68 @@ export default function About() {
                 knowledge to excel in their roles.
               </p>
             </div>
+          </div> */}
+        </div>
+      </section>
+      <section className="flex w-full justify-center bg-[rgba(255,255,255,0.05)] py-12 md:py-24 lg:py-32">
+        <div className="container space-y-12 px-4 md:px-6">
+          <div className="space-y-4 text-center">
+            <h2 className="text-3xl font-bold md:text-4xl">
+              Our Comprehensive Services include: 
+            </h2>
           </div>
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="space-y-4 rounded-lg bg-[rgba(255,255,255,0.1)] p-6">
+              {/* <BookIcon className="h-8 w-8 text-[rgb(132,189,0)]" /> */}
+              {/* <h3 className="text-xl font-semibold"></h3> */}
+              <p className="text-[rgba(255,255,255,0.8)]">
+                Access to a large database of thoroughly vetted healthcare personnel 
+              </p>
+            </div>
+            <div className="space-y-4 rounded-lg bg-[rgba(255,255,255,0.1)] p-6">
+              {/* <GraduationCapIcon className="h-8 w-8 text-[rgb(132,189,0)]" /> */}
+              {/* <h3 className="text-xl font-semibold"></h3> */}
+              <p className="text-[rgba(255,255,255,0.8)]">
+                Multi-channel sourcing strategies to find the right professionals for your needs 
+              </p>
+            </div>
+            <div className="space-y-4 rounded-lg bg-[rgba(255,255,255,0.1)] p-6">
+              {/* <ClipboardListIcon className="h-8 w-8 text-[rgb(132,189,0)]" /> */}
+              {/* <h3 className="text-xl font-semibold"></h3> */}
+              <p className="text-[rgba(255,255,255,0.8)]">
+                Proven ability to scale up services quickly to meet staffing demand 
+
+                A commitment to industry-leading
+              </p>
+            </div>
+            <div className="space-y-4 rounded-lg bg-[rgba(255,255,255,0.1)] p-6">
+              {/* <ClipboardListIcon className="h-8 w-8 text-[rgb(132,189,0)]" /> */}
+              {/* <h3 className="text-xl font-semibold"></h3> */}
+              <p className="text-[rgba(255,255,255,0.8)]">
+                Safety management practices 
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="flex w-full justify-center py-12 md:py-24 lg:py-32">
+        <div className="container space-y-12 px-4 md:px-6">
+          <div className="space-y-4 text-center">
+            <h2 className="text-3xl font-bold md:text-4xl">
+              Supporting Your Staffing Needs
+            </h2>
+            <p className="mx-auto max-w-3xl text-[rgba(255,255,255,0.8)]">
+              We understand the challenges of attracting and retaining healthcare professionals, especially in 
+              today’s competitive environment. Our nursing agency uses tailored recruitment and retention 
+              strategies to ensure a continuous supply of qualified staff for your needs. We work closely with you 
+              to develop a recruitment plan that addresses your specific staffing requirements, including active, inactive, 
+              and new nurse recruits. 
+
+              Partner with Programmed Health Professionals to ensure you have the skilled health professionals 
+              you need, when you need them.  
+            </p>
+          </div>
+
         </div>
       </section>
       <Footer />

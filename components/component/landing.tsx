@@ -49,6 +49,7 @@ export default function Landing() {
                   target="_blank"
                   href="https://php.fasttrack360.com.au/FastTrack.Web.CandidateRegistration/CandidateRegistration.Page?RegistrationPageId=14"
                   prefetch={false}
+                  className="font-bold"
                 >
                   Apply Now
                 </Link>
@@ -147,7 +148,7 @@ export default function Landing() {
               offers nurses the chance to grow, learn, and make a real impact. 
             </p>
           </div>
-          <div className="flex flex-col items-center gap-4 sm:flex-row">
+          <div className="flex justify-center">
               <Button
                 onClick={() => {
                   track("Applynow");
@@ -225,7 +226,7 @@ export default function Landing() {
               passionate, skilled staff to join our team. 
             </p>
           </div>
-          <div className="flex flex-col items-center gap-4 sm:flex-row">
+          <div className="flex justify-center">
               <Button
                 onClick={() => {
                   track("Applynow");
@@ -288,183 +289,6 @@ export default function Landing() {
           </div>
         </div>
       </section>
-{/*       <section className="flex w-full justify-center py-12 md:py-24 lg:py-32">
-        <div className="container space-y-12 px-4 md:px-6">
-          <div className="space-y-4 text-center">
-            <h2 className="text-3xl font-bold md:text-4xl">
-              Locations
-            </h2>
-            <p className="mx-auto max-w-3xl text-[rgba(255,255,255,0.8)]">
-              (links to google office locations in five states)  
-            </p>
-          </div>
-        </div>
-      </section>  */}  
-{/*       <section className="flex w-full justify-center py-12 md:py-24 lg:py-32">
-        <div className="container space-y-12 px-4 md:px-6">
-          <div className="space-y-4 text-center">
-            <h2 className="text-3xl font-bold md:text-4xl">
-              Financial Benefits
-            </h2>
-            <p className="mx-auto max-w-3xl text-[rgba(255,255,255,0.8)]">
-              At Programmed Health Professionals, we offer a range of financial
-              benefits to support our healthcare professionals.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            <div className="space-y-4 rounded-lg bg-[rgba(255,255,255,0.1)] p-6">
-              <WalletIcon className="h-8 w-8 text-[rgb(132,189,0)]" />
-              <h3 className="text-xl font-semibold">Weekly Pay</h3>
-              <p className="text-[rgba(255,255,255,0.8)]">
-                We offer weekly pay to ensure our healthcare professionals have
-                a consistent and reliable income.
-              </p>
-            </div>
-            <div className="space-y-4 rounded-lg bg-[rgba(255,255,255,0.1)] p-6">
-              <DollarSignIcon className="h-8 w-8 text-[rgb(132,189,0)]" />
-              <h3 className="text-xl font-semibold">Best Rates</h3>
-              <p className="text-[rgba(255,255,255,0.8)]">
-                We provide the best rates in the industry to ensure our
-                healthcare professionals are well-compensated for their hard
-                work.
-              </p>
-            </div>
-            <div className="space-y-4 rounded-lg bg-[rgba(255,255,255,0.1)] p-6">
-              <BriefcaseIcon className="h-8 w-8 text-[rgb(132,189,0)]" />
-              <h3 className="text-xl font-semibold">Excellent Benefits</h3>
-              <p className="text-[rgba(255,255,255,0.8)]">
-                In addition to competitive rates, we offer a range of excellent
-                benefits to support our healthcare professionals.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section> */}
-{/*       <section className="flex w-full justify-center bg-[rgba(255,255,255,0.05)] py-12 md:py-24 lg:py-32">
-        <div className="container space-y-12 px-4 md:px-6">
-          <div className="space-y-4 text-center">
-            <h2 className="text-3xl font-bold md:text-4xl">
-              Benefits of Working with Us
-            </h2>
-            <p className="mx-auto max-w-3xl text-[rgba(255,255,255,0.8)]">
-              At Programmed Health Professionals, we are committed to supporting
-              our healthcare professionals every step of the way.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            <div className="space-y-4 rounded-lg bg-[rgba(255,255,255,0.1)] p-6">
-              <CalendarIcon className="h-8 w-8 text-[rgb(132,189,0)]" />
-              <h3 className="text-xl font-semibold">Flexible Scheduling</h3>
-              <p className="text-[rgba(255,255,255,0.8)]">
-                We offer flexible scheduling options to accommodate your needs
-                and preferences.
-              </p>
-            </div>
-            <div className="space-y-4 rounded-lg bg-[rgba(255,255,255,0.1)] p-6">
-              <BriefcaseIcon className="h-8 w-8 text-[rgb(132,189,0)]" />
-              <h3 className="text-xl font-semibold">Career Development</h3>
-              <p className="text-[rgba(255,255,255,0.8)]">
-                We provide ongoing training and support to help you grow your
-                skills and advance your career.
-              </p>
-            </div>
-            <div className="space-y-4 rounded-lg bg-[rgba(255,255,255,0.1)] p-6">
-              <ClipboardIcon className="h-8 w-8 text-[rgb(132,189,0)]" />
-              <h3 className="text-xl font-semibold">Personalised Support</h3>
-              <p className="text-[rgba(255,255,255,0.8)]">
-                Our dedicated team is here to support you every step of the way,
-                from onboarding to placement and beyond.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section> */}
-{/*       <section className="flex w-full justify-center py-12 md:py-24 lg:py-32">
-        <div className="container space-y-12 px-4 md:px-6">
-          <div className="space-y-4 text-center">
-            <h2 className="text-3xl font-bold md:text-4xl">
-              Safety and Compliance
-            </h2>
-            <p className="mx-auto max-w-3xl text-[rgba(255,255,255,0.8)]">
-              At Programmed Health Professionals, we prioritize the safety and
-              compliance of our healthcare professionals.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            <div className="space-y-4 rounded-lg bg-[rgba(255,255,255,0.1)] p-6">
-              <ShieldIcon className="h-8 w-8 text-[rgb(132,189,0)]" />
-              <h3 className="text-xl font-semibold">Rigorous Screening</h3>
-              <p className="text-[rgba(255,255,255,0.8)]">
-                We conduct thorough background checks and verifications to
-                ensure the safety and compliance of our healthcare
-                professionals.
-              </p>
-            </div>
-            <div className="space-y-4 rounded-lg bg-[rgba(255,255,255,0.1)] p-6">
-              <ClipboardCheckIcon className="h-8 w-8 text-[rgb(132,189,0)]" />
-              <h3 className="text-xl font-semibold">Ongoing Compliance</h3>
-              <p className="text-[rgba(255,255,255,0.8)]">
-                We continuously monitor and maintain the compliance of our
-                healthcare professionals to ensure they meet all regulatory
-                requirements.
-              </p>
-            </div>
-            <div className="space-y-4 rounded-lg bg-[rgba(255,255,255,0.1)] p-6">
-              <AmbulanceIcon className="h-8 w-8 text-[rgb(132,189,0)]" />
-              <h3 className="text-xl font-semibold">Comprehensive Training</h3>
-              <p className="text-[rgba(255,255,255,0.8)]">
-                We provide comprehensive training to our healthcare
-                professionals to ensure they are equipped with the necessary
-                skills and knowledge to work safely and effectively.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="flex w-full justify-center bg-[rgba(255,255,255,0.05)] py-12 md:py-24 lg:py-32">
-        <div className="container space-y-12 px-4 md:px-6">
-          <div className="space-y-4 text-center">
-            <h2 className="text-3xl font-bold md:text-4xl">
-              Education and Training
-            </h2>
-            <p className="mx-auto max-w-3xl text-[rgba(255,255,255,0.8)]">
-              At Programmed Health Professionals, we are committed to the
-              ongoing education and training of our healthcare professionals.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            <div className="space-y-4 rounded-lg bg-[rgba(255,255,255,0.1)] p-6">
-              <BookIcon className="h-8 w-8 text-[rgb(132,189,0)]" />
-              <h3 className="text-xl font-semibold">Continuing Education</h3>
-              <p className="text-[rgba(255,255,255,0.8)]">
-                We provide access to a wide range of continuing education
-                opportunities to help our healthcare professionals stay
-                up-to-date with the latest industry trends and best practices.
-              </p>
-            </div>
-            <div className="space-y-4 rounded-lg bg-[rgba(255,255,255,0.1)] p-6">
-              <GraduationCapIcon className="h-8 w-8 text-[rgb(132,189,0)]" />
-              <h3 className="text-xl font-semibold">
-                Professional Development
-              </h3>
-              <p className="text-[rgba(255,255,255,0.8)]">
-                We offer comprehensive professional development programs to help
-                our healthcare professionals advance their careers and achieve
-                their goals.
-              </p>
-            </div>
-            <div className="space-y-4 rounded-lg bg-[rgba(255,255,255,0.1)] p-6">
-              <ClipboardListIcon className="h-8 w-8 text-[rgb(132,189,0)]" />
-              <h3 className="text-xl font-semibold">Specialized Training</h3>
-              <p className="text-[rgba(255,255,255,0.8)]">
-                We provide specialized training programs to ensure our
-                healthcare professionals are equipped with the latest skills and
-                knowledge to excel in their roles.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section> */}
       <Footer />
     </div>
   );

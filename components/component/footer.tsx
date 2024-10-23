@@ -8,18 +8,6 @@ export default function Footer() {
           &copy; 2024 Programmed Health Professionals. All rights reserved.
         </p>
 
-        <div className="flex flex-col xl:flex-row">
-          <p className="text-sm text-[rgba(255,255,255,0.8)]">
-            Address: 47 Burswood Road Burswood WA, 6100
-          </p>
-          <Link
-            className="text-sm text-[rgba(255,255,255,0.8)] hover:text-[rgb(132,189,0)]"
-            href="tel:13 11 48"
-          >
-            Telephone: 13 10 95
-          </Link>
-        </div>
-
         <nav className="flex items-center gap-4">
           <Link
             target="_blank"

@@ -14,16 +14,29 @@ export default function Jobs() {
         <div className="flex items-center justify-between space-x-6">
           <div className="max-w-2xl space-y-6 text-left">
             <h1 className="text-4xl font-bold tracking-tight md:text-5xl">
-              Positions available
+              Jobs Opportunities with Our Nursing Agency 
             </h1>
             <p className="text-lg text-[rgba(255,255,255,0.8)] md:text-xl">
-              We have jobs available for registered nurses, enrolled nurses, and
-              personal services workers across the country. Work in Perth,
-              Sydney, Melbourne, Adelaide, or Brisbane as well as many regional
-              placements available. Join our team and start start working now.
+              At Programmed Health Professionals, we offer a wide variety of rewarding nursing jobs and 
+              healthcare positions across Australia. Whether you're an experienced Registered Nurse (RN), 
+              Specialist Nurse, Midwife, Technician, or Support Worker, we have roles that suit your skills and 
+              preferences. 
             </p>
             <div className="flex flex-col items-center gap-4 sm:flex-row">
-              <ApplyNow />
+              <Button
+                className="rounded-md bg-[rgb(132,189,0)] px-8 py-3 font-bold text-[rgb(12,35,64)] hover:bg-[rgb(106,152,0)]"
+                onClick={() => {
+                  track("Applynow");
+                }}
+              >
+                <Link
+                  target="_blank"
+                  href="https://php.fasttrack360.com.au/FastTrack.Web.CandidateRegistration/CandidateRegistration.Page?RegistrationPageId=14"
+                  prefetch={false}
+                >
+                  Apply Now
+                </Link>
+              </Button>
               <Button
                 onClick={() => {
                   track("Call");
@@ -58,13 +71,45 @@ export default function Jobs() {
       <section className="flex w-full justify-center bg-[rgba(255,255,255,0.05)] py-12 md:py-24 lg:py-32">
         <div className="container space-y-12 px-4 md:px-6">
           <div className="space-y-4 text-center">
-            <h2 className="text-3xl font-bold md:text-4xl">Jobs Available</h2>
+            <h2 className="text-3xl font-bold md:text-4xl">Find Your Next Healthcare Job with Programmed Health Professionals</h2>
             <p className="mx-auto max-w-3xl text-[rgba(255,255,255,0.8)]">
-              We have a variety of job opportunities available across Australia.
-              Apply now for immediate start.
+              We work with leading healthcare facilities across multiple sectors, including hospitals, aged care 
+              homes, community care and industrial sites. This means you can find healthcare jobs that fit your 
+              qualifications, experience, and lifestyle, whether you’re looking for temporary or contract position. 
+
+              Explore opportunities that match your specialty, whether it's in acute care, aged care, community 
+              services, or home care. With our flexible job offerings, you have the freedom to work when and 
+              where it suits you best. 
             </p>
           </div>
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-2">
+          <div className="flex justify-center items-center gap-4">
+              <Button
+                className="rounded-md bg-[rgb(132,189,0)] px-8 py-3 font-bold text-[rgb(12,35,64)] hover:bg-[rgb(106,152,0)]"
+                onClick={() => {
+                  track("Applynow");
+                }}
+              >
+                <Link
+                  target="_blank"
+                  href="https://php.fasttrack360.com.au/FastTrack.Web.CandidateRegistration/CandidateRegistration.Page?RegistrationPageId=14"
+                  prefetch={false}
+                >
+                  Apply Now
+                </Link>
+              </Button>
+              <Button
+                onClick={() => {
+                  track("Call");
+                }}
+                className="rounded-md bg-[rgb(132,189,0)] px-8 py-3 font-bold text-[rgb(12,35,64)] hover:bg-[rgb(106,152,0)]"
+              >
+                <Link href="tel:131195" prefetch={false}>
+                  Call 13 11 95
+                </Link>
+              </Button>
+          </div>
+
+{/*           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-2">
             <div className="space-y-4 rounded-lg bg-[rgba(255,255,255,0.1)] p-6">
               <div className="flex items-center space-x-2">
                 <HospitalIcon className="h-8 w-8 text-[rgb(132,189,0)]" />
@@ -185,14 +230,14 @@ export default function Jobs() {
               </p>
               <ApplyNow />
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
       <section className="flex w-full justify-center py-12 md:py-24 lg:py-32">
         <div className="container space-y-12 px-4 md:px-6">
           <div className="space-y-4 text-center">
             <h2 className="text-3xl font-bold md:text-4xl">
-              Why Choose Programmed Health Professionals?
+              Why Choose Programmed Health Professionals for Your Healthcare Career?
             </h2>
             <p className="mx-auto max-w-3xl text-[rgba(255,255,255,0.8)]">
               We are committed to providing the best healthcare staffing
@@ -201,37 +246,43 @@ export default function Jobs() {
               opportunities.
             </p>
           </div>
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
             <div className="space-y-4 rounded-lg bg-[rgba(255,255,255,0.1)] p-6">
               <BriefcaseIcon className="h-8 w-8 text-[rgb(132,189,0)]" />
               <h3 className="text-xl font-semibold">
-                Wide Range of Opportunities
+                Extensive Job Opportunities
               </h3>
               <p className="text-[rgba(255,255,255,0.8)]">
-                We have jobs available for registered nurses, enrolled nurses,
-                and personal services workers across Australia.
+                We provide healthcare jobs across Australia, including metropolitan, regional, and remote areas. Our network of healthcare clients offers a wide range of nursing and healthcare opportunities in diverse clinical environments, from hospitals to community care. 
               </p>
             </div>
             <div className="space-y-4 rounded-lg bg-[rgba(255,255,255,0.1)] p-6">
               <ClipboardIcon className="h-8 w-8 text-[rgb(132,189,0)]" />
-              <h3 className="text-xl font-semibold">Streamlined Onboarding</h3>
+              <h3 className="text-xl font-semibold">Flexible Work Arrangements</h3>
               <p className="text-[rgba(255,255,255,0.8)]">
-                Our efficient onboarding process ensures you can start your new
-                role quickly and seamlessly.
+                We understand the importance of work-life balance. Programmed Health Professionals offers flexible shifts and rosters that fit your lifestyle. Whether you prefer casual work or are looking for long-term roles, we have options that suit your schedule. 
               </p>
             </div>
             <div className="space-y-4 rounded-lg bg-[rgba(255,255,255,0.1)] p-6">
               <WalletIcon className="h-8 w-8 text-[rgb(132,189,0)]" />
-              <h3 className="text-xl font-semibold">Competitive Rates</h3>
+              <h3 className="text-xl font-semibold">Competitive Pay and Benefits</h3>
               <p className="text-[rgba(255,255,255,0.8)]">
-                We offer competitive rates and excellent benefits to ensure our
-                healthcare professionals are well-compensated.
+                We offer competitive pay rates for all roles, with additional benefits such as allowances for night shifts, weekends, and public holidays. You'll also have access to ongoing professional development and training opportunities to help you advance your healthcare career. 
               </p>
             </div>
+            <div className="space-y-4 rounded-lg bg-[rgba(255,255,255,0.1)] p-6">
+              <BriefcaseIcon className="h-8 w-8 text-[rgb(132,189,0)]" />
+              <h3 className="text-xl font-semibold">
+                Support Every Step of the Way
+              </h3>
+              <p className="text-[rgba(255,255,255,0.8)]">
+                At Programmed Health Professionals, we provide ongoing support for our healthcare staff. From the recruitment process to placement, our team will help you find the right job, ensure compliance, and provide continued support throughout your employment. You’ll have access to comprehensive induction, training, and a dedicated support team to help you succeed. 
+              </p>
+           </div>
           </div>
         </div>
       </section>
-      <section className="flex w-full justify-center bg-[rgba(255,255,255,0.05)] py-12 md:py-24 lg:py-32">
+{/*       <section className="flex w-full justify-center bg-[rgba(255,255,255,0.05)] py-12 md:py-24 lg:py-32">
         <div className="container space-y-12 px-4 md:px-6">
           <div className="space-y-4 text-center">
             <h2 className="text-3xl font-bold md:text-4xl">
@@ -270,8 +321,49 @@ export default function Jobs() {
             </div>
           </div>
         </div>
+      </section> */}
+      <section className="flex w-full justify-center bg-[rgba(255,255,255,0.05)] py-12 md:py-24 lg:py-32">
+        <div className="container space-y-12 px-4 md:px-6">
+          <div className="space-y-4 text-center">
+            <h2 className="text-3xl font-bold md:text-4xl">
+              Nursing and Support Jobs We Offer 
+            </h2>
+{/*             <p className="mx-auto max-w-3xl text-[rgba(255,255,255,0.8)]">
+            </p> */}
+          </div>
+          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="space-y-4 rounded-lg bg-[rgba(255,255,255,0.1)] p-6">
+              <BriefcaseIcon className="h-8 w-8 text-[rgb(132,189,0)]" />
+              <h3 className="text-xl font-semibold">Registered and Specialist Nurse Jobs</h3>
+              <p className="text-[rgba(255,255,255,0.8)]">
+                Explore nursing opportunities in various specialties, including acute care, aged care, community care, mental health, and more. 
+              </p>
+            </div>
+            <div className="space-y-4 rounded-lg bg-[rgba(255,255,255,0.1)] p-6">
+              <BriefcaseIcon className="h-8 w-8 text-[rgb(132,189,0)]" />
+              <h3 className="text-xl font-semibold">Midwife Jobs</h3>
+              <p className="text-[rgba(255,255,255,0.8)]">
+                Find rewarding midwifery positions in hospital settings and community care, supporting mothers and newborns with the highest quality care. 
+              </p>
+            </div>
+            <div className="space-y-4 rounded-lg bg-[rgba(255,255,255,0.1)] p-6">
+              <BriefcaseIcon className="h-8 w-8 text-[rgb(132,189,0)]" />
+              <h3 className="text-xl font-semibold">Technician Jobs</h3>
+              <p className="text-[rgba(255,255,255,0.8)]">
+                We offer a range of technician roles in healthcare settings, from medical laboratory technicians to radiology and other specialist healthcare technicians. 
+              </p>
+            </div>
+            <div className="space-y-4 rounded-lg bg-[rgba(255,255,255,0.1)] p-6">
+              <BriefcaseIcon className="h-8 w-8 text-[rgb(132,189,0)]" />
+              <h3 className="text-xl font-semibold">Support Worker Jobs</h3>
+              <p className="text-[rgba(255,255,255,0.8)]">
+                Join our network of support workers who assist patients in hospitals, aged care facilities, and home care settings, providing essential care and assistance. 
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
-      <section className="flex w-full justify-center py-12 md:py-24 lg:py-32">
+{/*       <section className="flex w-full justify-center py-12 md:py-24 lg:py-32">
         <div className="container space-y-12 px-4 md:px-6">
           <div className="space-y-4 text-center">
             <h2 className="text-3xl font-bold md:text-4xl">
@@ -307,6 +399,42 @@ export default function Jobs() {
                 from onboarding to placement and beyond.
               </p>
             </div>
+          </div>
+        </div>
+      </section> */}
+      <section className="flex w-full justify-center py-12 md:py-24 lg:py-32">
+        <div className="container space-y-12 px-4 md:px-6">
+          <div className="space-y-4 text-center">
+            <h2 className="text-3xl font-bold md:text-4xl">Apply for Jobs with Programmed Health Professionals </h2>
+            <p className="mx-auto max-w-3xl text-[rgba(255,255,255,0.8)]">
+              Whether you're looking for a casual healthcare role or the next step in your career, Programmed Health Professionals has the job for you. With our extensive range of opportunities and a dedicated team to support you, you’ll find the right job faster.  
+            </p>
+          </div>
+          <div className="flex justify-center items-center gap-4">
+              <Button
+                className="rounded-md bg-[rgb(132,189,0)] px-8 py-3 font-bold text-[rgb(12,35,64)] hover:bg-[rgb(106,152,0)]"
+                onClick={() => {
+                  track("Applynow");
+                }}
+              >
+                <Link
+                  target="_blank"
+                  href="https://php.fasttrack360.com.au/FastTrack.Web.CandidateRegistration/CandidateRegistration.Page?RegistrationPageId=14"
+                  prefetch={false}
+                >
+                  Apply Now
+                </Link>
+              </Button>
+              <Button
+                onClick={() => {
+                  track("Call");
+                }}
+                className="rounded-md bg-[rgb(132,189,0)] px-8 py-3 font-bold text-[rgb(12,35,64)] hover:bg-[rgb(106,152,0)]"
+              >
+                <Link href="tel:131195" prefetch={false}>
+                  Call 13 11 95
+                </Link>
+              </Button>
           </div>
         </div>
       </section>
