@@ -18,7 +18,7 @@ export default function Jobs() {
             </h1>
             <p className="text-lg text-[rgba(255,255,255,0.8)] md:text-xl">
               At Programmed Health Professionals, we offer a wide variety of rewarding nursing jobs and 
-              healthcare positions across Australia. Whether you're an experienced Registered Nurse (RN), 
+              healthcare positions across Australia. Whether you're an experienced Registered Nurse, 
               Specialist Nurse, Midwife, Technician, or Support Worker, we have roles that suit your skills and 
               preferences. 
             </p>

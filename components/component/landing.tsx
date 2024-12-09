@@ -88,7 +88,7 @@ export default function Landing() {
       </main>
       <section className="flex w-full justify-center bg-[rgba(255,255,255,0.05)] py-12 md:py-24 lg:py-32">
         <div className="container space-y-12 px-4 md:px-6">
-          <div className="space-y-4 text-center">
+          <div className="space-y-4 text-left">
             <h2 className="text-3xl font-bold md:text-4xl">
               Why Nurses Choose Programmed Health Professionals?
             </h2>
